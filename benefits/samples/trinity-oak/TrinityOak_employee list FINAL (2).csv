@@ -1,0 +1,75 @@
+Employee Name,Rel,D.O.B.,Sex,Home Zip,Office,Hire Dt,Medical Cov,Dental Y/N,Job Title,Annual Salary
+"Alvarez, Maria",Employee,9/4/1994,F,75034,Frisco,10/10/2020,Employee Only,Y,Dental Hygienist,"$75,000"
+"Alvarez, Lucas",Child,4/2/2015,M,75034,,,,,,
+"Brooks, James",Employee,1967-11-07,M,75070,McKinney,6/4/2020,declined,Y,Dental Hygienist,"$74,000"
+"Carter, Ashley",Employee,10-07-00,F,76201,Denton,8/22/2020,Emp + Child(ren),Y,Sterilization Tech,"$58,000"
+"Carter, Mason",Child,5/8/2023,M,76201,,,,,,
+"Carter, Caleb",Child,2/19/2024,M,76201,,,,,,
+"Dawson, Robert",Employee,9/16/1984,M,75034,Frisco,6/24/2019,ee only,Y,Associate Dentist,"$42,000"
+"Ellison, Jennifer",Employee,,F,75070,McKinney,3/25/2017,FAM,Y,Office Manager,"$64,000"
+"Ellison, Sophia",Child,1/19/1999,F,75070,,,,,,
+"Ellison, Mark",Spouse,9/19/1999,M,75070,,,,,,
+"Ellison, Ava",Child,10/26/2018,F,75070,,,,,,
+"Ellison, Olivia",Child,8/23/2021,F,75070,,,,,,
+"Fuentes, Michael",Employee,01-24-99,M,76201,Denton,12/10/2022,EE,Y,Front Office,"$83,000"
+"Garrison, Jessica",Employee,11/12/1979,F,75034,Frisco,1/15/2017,EE+SP,Y,Associate Dentist,"$45,000"
+"Garrison, Greg",Spouse,4/25/1983,M,75034,,,,,,
+"Hollis, David",Employee,1985-03-24,M,75070,McKinney,4/13/2018,EE,Y,Dental Hygienist,"$48,000"
+"Ibarra, Sarah",Employee,07-18-75,F,76201,Denton,5/5/2025,Emp + Child(ren),Y,Sterilization Tech,"$73,000"
+"Ibarra, Ethan",Child,4/5/2013,M,76201,,,,,,
+"Ibarra, Emma",Child,11/8/2018,F,76201,,,,,,
+"Jennings, Daniel",Employee,8/27/2003,M,7507,Frisco,10/6/2016,Family,Y,Dental Hygienist,"$47,000"
+"Jennings, Erin",Spouse,6/20/1999,F,75034,,,,,,
+"Jennings, Emma",Child,8/28/2025,F,75034,,,,,,
+"Jennings, Caleb",Child,7/13/2024,M,75034,,,,,,
+"Jennings, Mia",Child,1/7/2024,F,75034,,,,,,
+"Kowalski, Emily",Employee,1999-04-15,F,75070,McKinney,3/4/2017,EE,Y,Dental Hygienist,"$38,000"
+"Lindqvist, Chris",Employee,03-18-67,M,76201,Denton,2/12/2021,EE,Y,Dental Hygienist,"$93,000"
+"Mendoza, Amanda",Employee,10/13/1990,F,75034,Frisco,3/21/2016,WAIVED,N,Associate Dentist,"$61,000"
+"Nakamura, Joshua",Employee,1973-02-04,M,75070,McKinney,8/15/2019,EE,Y,Front Office,"$43,000"
+"Okafor, Brittany",Employee,02-24-94,F,76201,Denton,6/24/2016,EE,Y,Sterilization Tech,"$82,000"
+"Patel, Matthew",Employee,9/1/1993,M,75034,Frisco,4/17/2017,EE+SP,Y,Billing Specialist,"$72,000"
+"Patel, Laura",Spouse,5/21/1989,F,75034,,,,,,
+"Quintero, Lauren",Employee,1998-12-28,F,75070,McKinney,5/17/2017,Waive,N,Front Office,"$87,000"
+"Ramsey, Andrew",Employee,09-18-89,M,76201,Denton,9/11/2022,EE+CH,Y,Associate Dentist,"$89,000"
+"Ramsey, Mason",Child,4/17/2018,M,76201,,,,,,
+"Salazar, Megan",Employee,6/24/1972,F,75034,Frisco,1/1/2024,Family,Y,Office Manager,"$54,000"
+"Salazar, Steven",Spouse,8/26/1971,M,75034,,,,,,
+"Salazar, Ethan",Child,4/4/2023,M,75034,,,,,,
+"Salazar, Emma",Child,4/16/2015,F,75034,,,,,,
+"Salazar, Owen",Child,8/21/2025,M,75034,,,,,,
+"Thornton, Ryan",Employee,1981-11-03,M,75070,McKinney,11/4/2026,EE,Y,Sterilization Tech,"$83,000"
+"Underwood, Stephanie",Employee,08-06-91,F,76201,Denton,7/26/2022,Emp + Spouse,Y,Dental Hygienist,"$89,000"
+"Underwood, Greg",Spouse,7/24/1988,M,76201,,,,,,
+"Vasquez, Brandon",Employee,12/6/1998,M,75034,Frisco,3/5/2012,Employee Only,Y,Associate Dentist,"$95,000"
+"Whitfield, Nicole",Employee,1974-11-05,F,75070,McKinney,10/27/2021,WAIVED,N,Billing Specialist,"$60,000"
+"Xiong, Tyler",Employee,09-18-94,M,76201,Denton,3/1/2012,EE + Kids,Y,Billing Specialist,"$44,000"
+"Xiong, Noah",Child,4/27/2019,M,76201,,,,,,
+"Xiong, Liam",Child,4/10/2021,M,76201,,,,,,
+"Xiong, Owen",Child,5/18/2020,M,76201,,,,,,
+"Yates, Rachel",Employee,3/2/1977,F,75034,Frisco,12/12/2026,EE,Y,Billing Specialist,"$75,000"
+"Zamora, Kevin",Employee,1970-07-27,M,75070,McKinney,9/5/2020,Employee Only,Y,Associate Dentist,"$70,000"
+"Barrett, Samantha",Employee,08-25-02,F,76201,Denton,3/20/2012,FAM,Y,Dental Assistant,"$47,000"
+"Barrett, Greg",Spouse,9/2/2005,M,76201,,,,,,
+"Barrett, Owen",Child,8/26/2023,M,76201,,,,,,
+"Barrett, Owen",Child,4/7/2025,M,76201,,,,,,
+"Castillo, Jason",Employee,1/25/1986,M,75034,Frisco,2/17/2019,family,Y,Dental Hygienist,"$86,000"
+"Castillo, Laura",Spouse,6/20/1983,F,75034,,,,,,
+"Castillo, Noah",Child,8/17/2017,M,75034,,,,,,
+"Castillo, Mason",Child,4/23/2009,M,75034,,,,,,
+"Castillo, Ethan",Child,4/27/2008,M,75034,,,,,,
+"Donovan, Kayla",Employee,1975-03-14,F,75070,McKinney,2/13/2019,ee only,Y,Dental Hygienist,"$80,000"
+"Espinoza, Justin",Employee,07-03-88,M,76201,Denton,4/22/2016,EE,Y,Sterilization Tech,"$47,000"
+"Fletcher, Heather",Employee,3/9/1980,F,75034,Frisco,3/15/2015,EE/Spouse,Y,Dental Hygienist,"$63,000"
+"Fletcher, Greg",Spouse,11/27/1982,M,75034,,,,,,
+"Guerrero, Eric",Employee,1989-03-23,M,75070,McKinney,7/17/2018,Emp + Spouse,Y,Office Manager,"$50,000"
+"Guerrero, Monica",Spouse,2/24/1988,F,75070,,,,,,
+"Hampton, Amber",Employee,01-11-80,F,76201,Denton,9/15/2019,EE,Y,Office Manager,"$59,000"
+"Irving, Aaron",Employee,10/10/1970,M,75034,Frisco,9/3/2013,Employee Only,Y,Dental Hygienist,"$43,000"
+"Jacobs, Tiffany",Employee,1987-05-02,F,75070,McKinney,3/9/2024,Employee Only,Y,Sterilization Tech,"$65,000"
+"Kendrick, Adam",Employee,07-05-87,M,76201,Denton,9/17/2021,Emp + Child(ren),Y,Billing Specialist,"$58,000"
+"Kendrick, Grace",Child,7/3/2020,F,76201,,,,,,
+"Lozano, Crystal",Employee,1/21/1986,F,75034,Frisco,2/26/2016,EE,Y,Associate Dentist,"$92,000"
+"Monroe, Nathan",Employee,1989-02-09,M,75070,McKinney,2/15/2012,Emp + Spouse,Y,Associate Dentist,"$64,000"
+"Monroe, Monica",Spouse,1/17/1991,F,75070,,,,,,
+"Mendoza, Amanda",Employee,10/13/1990,F,75034,Frisco,3/21/2016,WAIVED,N,Associate Dentist,"$61,000"

@@ -1,0 +1,349 @@
+Claim No,Member ID,Patient,Rel,Service Date,Paid Date,Provider,Service,Diagnosis Group,Billed,Paid
+C2608-00001,RM-10102,"Morales, Maria",E,07/08/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,125.77,118.04
+C2608-00002,RM-10124,"Holt, Donna",E,07/08/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,15.49,14.70
+C2608-00003,RM-10139,"Jacobs, David",E,07/08/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,184.18,158.39
+C2608-00004,RM-10253,"Rhodes, Chloe",C,07/08/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,198.37,166.23
+C2608-00005,RM-10320,"Hale, Megan",E,07/08/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,39.19,38.50
+C2608-00006,RM-10321,"Diaz, Aaron",E,07/08/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,76.63,67.05
+C2608-00007,RM-10215,"Vasquez, Tyler",E,07/09/2026,08/07/2026,Lakeview Internal Medicine,Office visit,Respiratory,192.88,134.24
+C2608-00008,RM-10163,"Sanders, Aaron",S,07/10/2026,08/07/2026,QuickCare Urgent Care,Urgent care,Respiratory,426.86,242.40
+C2608-00009,RM-10204,"Kramer, Luis",E,07/10/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,88.25,82.63
+C2608-00010,RM-10375,"Fischer, Andre",E,07/10/2026,08/07/2026,Motion Physical Therapy,Physical therapy,Injury,351.92,157.64
+C2608-00011,RM-10269,"Hale, Amber",E,07/11/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,111.56,103.57
+C2608-00012,RM-10357,"Baker, James",E,07/11/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,160.83,138.91
+C2608-00013,RM-10185,"Anderson, Eli",C,07/12/2026,08/07/2026,Ridge Road Pediatrics,Office visit,Cardiovascular,216.62,124.38
+C2608-00014,RM-10286,"Baker, Michelle",E,07/12/2026,08/07/2026,QuickCare Urgent Care,Urgent care,Injury,201.57,129.44
+C2608-00015,RM-10127,"Duffy, Grace",C,07/13/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,153.91,140.80
+C2608-00016,RM-10114,"Fischer, Emma",C,07/14/2026,08/07/2026,Crossroads Laboratory,Lab,Endocrine,259.05,181.82
+C2608-00017,RM-10290,"Perez, Monica",E,07/14/2026,08/07/2026,Crossroads Laboratory,Lab,Digestive,125.27,69.51
+C2608-00018,RM-10142,"Jacobs, Caleb",C,07/15/2026,08/07/2026,Crossroads Laboratory,Lab,Preventive,414.06,233.14
+C2608-00019,RM-10368,"Keller, Brian",E,07/15/2026,08/07/2026,Carmel Family Practice,Office visit,Preventive,139.35,102.65
+C2608-00020,RM-10110,"Warren, Derek",E,07/16/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,76.92,69.10
+C2608-00021,RM-10248,"Chandler, Scott",S,07/16/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,240.27,238.41
+C2608-00022,RM-10243,"Lambert, Tyler",E,07/17/2026,08/07/2026,Northside Primary Care,Office visit,Endocrine,175.92,107.39
+C2608-00023,RM-10119,"Carter, Crystal",S,07/18/2026,08/07/2026,Crossroads Laboratory,Lab,Preventive,36.08,27.81
+C2608-00024,RM-10246,"Chandler, Ashley",E,07/18/2026,08/07/2026,Northside Primary Care,Office visit,Cardiovascular,241.59,156.49
+C2608-00025,RM-10250,"Chandler, Ethan",C,07/18/2026,08/07/2026,Crossroads Laboratory,Lab,Preventive,238.94,179.94
+C2608-00026,RM-10399,"Mercer, Angela",E,07/18/2026,08/07/2026,Carmel Family Practice,Office visit,Endocrine,266.76,125.01
+C2608-00027,RM-10248,"Chandler, Scott",S,07/19/2026,08/07/2026,Carmel Family Practice,Office visit,Musculoskeletal,234.02,135.65
+C2608-00028,RM-10270,"Hale, Ryan",S,07/19/2026,08/07/2026,QuickCare Urgent Care,Urgent care,Injury,344.19,233.73
+C2608-00029,RM-10272,"Baker, Aaron",S,07/19/2026,08/07/2026,QuickCare Urgent Care,Urgent care,Skin,268.79,122.66
+C2608-00030,RM-10276,"Dawson, Teresa",E,07/19/2026,08/07/2026,Harbor Counseling Group,Mental health,Mental health,224.79,158.08
+C2608-00031,RM-10286,"Baker, Michelle",E,07/19/2026,08/07/2026,Northside Primary Care,Office visit,Digestive,232.85,140.27
+C2608-00032,RM-10288,"Mercer, Tyler",E,07/19/2026,08/07/2026,Carmel Family Practice,Office visit,Cardiovascular,235.87,139.08
+C2608-00033,RM-10307,"Coleman, Ella",C,07/19/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,247.09,230.96
+C2608-00034,RM-10342,"Forbes, Travis",E,07/19/2026,08/07/2026,Lakeview Imaging,Imaging,Injury,292.07,180.72
+C2608-00035,RM-10392,"Walker, Olivia",C,07/19/2026,08/07/2026,Ridge Road Pediatrics,Office visit,Skin,406.78,177.85
+C2608-00036,RM-10126,"Duffy, Wyatt",C,07/20/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,170.32,156.54
+C2608-00037,RM-10127,"Duffy, Grace",C,07/20/2026,08/07/2026,Ridge Road Pediatrics,Office visit,Preventive,203.88,113.88
+C2608-00038,RM-10209,"Fischer, Zoe",C,07/20/2026,08/07/2026,St. Brendan Hospital,Emergency room,Cardiovascular,3239.71,1920.48
+C2608-00039,RM-10362,"Hale, Ryan",E,07/20/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,210.85,201.98
+C2608-00040,RM-10210,"Diaz, Scott",E,07/22/2026,08/07/2026,Harbor Counseling Group,Mental health,Mental health,302.87,137.63
+C2608-00041,RM-10180,"Torres, Ryan",S,07/23/2026,08/07/2026,Motion Physical Therapy,Physical therapy,Injury,244.02,150.87
+C2608-00042,RM-10181,"Baker, Jason",E,07/23/2026,08/07/2026,Harbor Counseling Group,Mental health,Mental health,227.60,137.24
+C2608-00043,RM-10299,"Garcia, Liam",C,07/23/2026,08/07/2026,Ridge Road Pediatrics,Office visit,Preventive,140.93,94.79
+C2608-00044,RM-10359,"Ellison, Maria",E,07/23/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,120.01,99.94
+C2608-00045,RM-10187,"Lopez, Anthony",E,07/24/2026,08/07/2026,Lakeview Internal Medicine,Office visit,Digestive,191.12,144.26
+C2608-00046,RM-10212,"Coleman, Jennifer",E,07/25/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,39.00,36.78
+C2608-00047,RM-10247,"Chandler, Monica",E,07/25/2026,08/07/2026,Northside Primary Care,Office visit,Respiratory,302.31,189.15
+C2608-00048,RM-10384,"Quinn, Linda",E,07/25/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,176.90,165.69
+C2608-00049,RM-10241,"Ellison, Ava",C,07/27/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,210.78,196.78
+C2608-00050,RM-10272,"Baker, Aaron",S,07/27/2026,08/07/2026,Carmel Family Practice,Office visit,Skin,182.50,111.29
+C2608-00051,RM-10303,"Morales, Ruby",C,07/27/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,245.42,229.30
+C2608-00052,RM-10340,"Olsen, Mark",E,07/27/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,124.73,110.90
+C2608-00053,RM-10106,"Morales, Lily",C,07/28/2026,08/07/2026,Motion Physical Therapy,Physical therapy,Injury,123.10,95.47
+C2608-00054,RM-10171,"Fleming, Zoe",C,07/28/2026,08/07/2026,Ridge Road Pediatrics,Office visit,Skin,359.25,163.80
+C2608-00055,RM-10226,"Fischer, Henry",C,07/28/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,124.20,122.98
+C2608-00056,RM-10232,"Anderson, Brian",E,07/28/2026,08/07/2026,Lakeview Imaging,Imaging,Musculoskeletal,2058.38,1231.10
+C2608-00057,RM-10285,"Porter, Dale",E,07/28/2026,08/07/2026,Carmel Family Practice,Office visit,Respiratory,324.45,142.00
+C2608-00058,RM-10363,"Duffy, Heather",E,07/28/2026,08/07/2026,Lakeview Internal Medicine,Office visit,Cardiovascular,410.23,193.96
+C2608-00059,RM-10365,"Duffy, Ella",C,07/28/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,48.26,41.64
+C2608-00060,RM-10384,"Quinn, Linda",E,07/28/2026,08/07/2026,Northside Primary Care,Office visit,Musculoskeletal,249.13,156.10
+C2608-00061,RM-10333,"Torres, Linda",S,07/29/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,185.25,149.07
+C2608-00062,RM-10108,"Walker, Adam",E,07/30/2026,08/07/2026,Northside Primary Care,Office visit,Musculoskeletal,116.52,83.86
+C2608-00063,RM-10224,"Fischer, Brenda",S,07/30/2026,08/07/2026,Lakeview Internal Medicine,Office visit,Skin,347.19,187.29
+C2608-00064,RM-10247,"Chandler, Monica",E,07/30/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,78.53,76.96
+C2608-00065,RM-10264,"Olsen, Carlos",E,07/30/2026,08/07/2026,Summit Imaging Center,Imaging,Musculoskeletal,1250.62,842.79
+C2608-00066,RM-10220,"Underwood, Paul",E,07/31/2026,08/07/2026,Northside Primary Care,Office visit,Musculoskeletal,185.93,119.75
+C2608-00067,RM-10225,"Fischer, Liam",C,07/31/2026,08/07/2026,Crossroads Laboratory,Lab,Cardiovascular,211.20,96.18
+C2608-00068,RM-10239,"Ellison, Henry",C,07/31/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,61.99,55.39
+C2608-00069,RM-10170,"Fleming, Derek",E,08/01/2026,08/07/2026,Lakeview Internal Medicine,Office visit,Skin,282.13,188.96
+C2608-00070,RM-10316,"Baker, Michael",E,08/01/2026,08/07/2026,Northside Primary Care,Office visit,Digestive,194.67,115.95
+C2608-00071,RM-10177,"Bishop, Caleb",C,08/02/2026,08/07/2026,Harbor Counseling Group,Mental health,Mental health,420.39,179.53
+C2608-00072,RM-10193,"Dawson, Monica",S,08/02/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,48.67,40.21
+C2608-00073,RM-10196,"Nguyen, Thanh",E,08/02/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,59.80,48.90
+C2608-00074,RM-10362,"Hale, Ryan",E,08/02/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,189.02,176.63
+C2608-00075,RM-10147,"Rhodes, Susan",S,08/03/2026,08/07/2026,Northside Primary Care,Office visit,Skin,342.05,162.76
+C2608-00076,RM-10176,"Bishop, Rachel",S,08/03/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,191.42,180.25
+C2608-00077,RM-10243,"Lambert, Tyler",E,08/03/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,206.33,180.59
+C2608-00078,RM-10265,"Sanders, Cody",E,08/03/2026,08/07/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,284.99,234.45
+C2608-00079,RM-10112,"Fischer, Nathan",E,07/15/2026,08/14/2026,Lakeview Internal Medicine,Office visit,Musculoskeletal,241.34,183.42
+C2608-00080,RM-10292,"Kramer, Karen",E,07/15/2026,08/14/2026,Crossroads Laboratory,Lab,Digestive,29.40,19.66
+C2608-00081,RM-10365,"Duffy, Ella",C,07/15/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Skin,221.69,156.36
+C2608-00082,RM-10397,"Hughes, Carlos",E,07/16/2026,08/14/2026,Lakeview Imaging,Imaging,Injury,1151.78,770.31
+C2608-00083,RM-10113,"Fischer, Tanya",S,07/17/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,31.44,25.74
+C2608-00084,RM-10161,"Vance, Mason",C,07/17/2026,08/14/2026,Harbor Counseling Group,Mental health,Mental health,267.90,126.54
+C2608-00085,RM-10190,"Chandler, Eric",S,07/17/2026,08/14/2026,Lakeview Imaging,Imaging,Digestive,1208.25,589.20
+C2608-00086,RM-10237,"Novak, Kevin",E,07/17/2026,08/14/2026,QuickCare Urgent Care,Urgent care,Skin,346.40,268.29
+C2608-00087,RM-10312,"Quinn, Lily",C,07/17/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Digestive,184.77,105.26
+C2608-00088,RM-10290,"Perez, Monica",E,07/18/2026,08/14/2026,Crossroads Laboratory,Lab,Digestive,271.96,194.33
+C2608-00089,RM-10296,"Edwards, Wyatt",C,07/18/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,180.06,145.62
+C2608-00090,RM-10108,"Walker, Adam",E,07/19/2026,08/14/2026,Harbor Counseling Group,Mental health,Mental health,188.81,130.54
+C2608-00091,RM-10349,"Garcia, Sandra",E,07/19/2026,08/14/2026,Lakeview Internal Medicine,Office visit,Cardiovascular,166.61,81.41
+C2608-00092,RM-10367,"Baker, Kevin",E,07/19/2026,08/14/2026,Lakeview Imaging,Imaging,Injury,2270.17,1218.04
+C2608-00093,RM-10374,"Walker, Jason",E,07/19/2026,08/14/2026,Harbor Counseling Group,Mental health,Mental health,184.69,102.65
+C2608-00094,RM-10220,"Underwood, Paul",E,07/20/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,246.76,203.31
+C2608-00095,RM-10371,"Warren, Linda",E,07/21/2026,08/14/2026,Crossroads Laboratory,Lab,Endocrine,222.42,123.44
+C2608-00096,RM-10383,"Mercer, Carlos",E,07/21/2026,08/14/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,159.51,118.79
+C2608-00097,RM-10209,"Fischer, Zoe",C,07/22/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,232.35,217.65
+C2608-00098,RM-10338,"Garcia, Liam",C,07/22/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Preventive,182.41,98.06
+C2608-00099,RM-10129,"Hughes, Angela",E,07/23/2026,08/14/2026,Carmel Family Practice,Office visit,Skin,230.33,104.04
+C2608-00100,RM-10252,"Rhodes, Daniel",E,07/23/2026,08/14/2026,Carmel Family Practice,Office visit,Cardiovascular,462.98,206.14
+C2608-00101,RM-10348,"Forbes, Levi",C,07/23/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Digestive,370.85,213.75
+C2608-00102,RM-10183,"Anderson, Karen",S,07/24/2026,08/14/2026,Northside Surgery Center,Outpatient surgery,Digestive,2777.90,2024.43
+C2608-00103,RM-10211,"Torres, Ryan",E,07/24/2026,08/14/2026,QuickCare Urgent Care,Urgent care,Injury,167.41,128.49
+C2608-00104,RM-10395,"Keller, Kimberly",E,07/24/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,261.13,211.96
+C2608-00105,RM-10236,"Owens, Brian",E,07/25/2026,08/14/2026,QuickCare Urgent Care,Urgent care,Injury,279.14,155.38
+C2608-00106,RM-10388,"Walker, Ryan",E,07/25/2026,08/14/2026,Crossroads Laboratory,Lab,Endocrine,316.29,199.77
+C2608-00107,RM-10218,"Hale, Tyler",E,07/26/2026,08/14/2026,Carmel Family Practice,Office visit,Cardiovascular,141.13,88.92
+C2608-00108,RM-10229,"Coleman, Ruby",C,07/26/2026,08/14/2026,Crossroads Laboratory,Lab,Cardiovascular,346.89,178.33
+C2608-00109,RM-10343,"Forbes, Wyatt",C,07/26/2026,08/14/2026,Harbor Counseling Group,Mental health,Mental health,205.23,135.38
+C2608-00110,RM-10367,"Baker, Kevin",E,07/26/2026,08/14/2026,Lakeview Internal Medicine,Office visit,Digestive,177.75,131.00
+C2608-00111,RM-10367,"Baker, Kevin",E,07/26/2026,08/14/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,297.43,152.88
+C2608-00112,RM-10203,"Lopez, Levi",C,07/27/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Musculoskeletal,260.07,180.16
+C2608-00113,RM-10332,"Torres, Derek",E,07/27/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,98.80,92.14
+C2608-00114,RM-10338,"Garcia, Liam",C,07/27/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Musculoskeletal,118.98,89.05
+C2608-00115,RM-10283,"Lambert, Susan",E,07/28/2026,08/14/2026,Northside Primary Care,Office visit,Musculoskeletal,119.87,73.30
+C2608-00116,RM-10364,"Duffy, Lily",C,07/28/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Skin,351.55,149.07
+C2608-00117,RM-10392,"Walker, Olivia",C,07/28/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Digestive,388.68,211.58
+C2608-00118,RM-10133,"Forbes, Daniel",E,07/29/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,146.21,120.35
+C2608-00119,RM-10270,"Hale, Ryan",S,07/29/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,187.08,164.44
+C2608-00120,RM-10134,"Duffy, Marcus",E,07/30/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,155.78,132.04
+C2608-00121,RM-10162,"Sanders, Donna",E,07/30/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,143.90,128.73
+C2608-00122,RM-10353,"Warren, Marcus",E,07/30/2026,08/14/2026,Lakeview Internal Medicine,Office visit,Skin,485.05,207.87
+C2608-00123,RM-10205,"Graves, Anthony",E,07/31/2026,08/14/2026,Lakeview Imaging,Imaging,Musculoskeletal,1311.25,729.62
+C2608-00124,RM-10234,"Anderson, Mason",C,07/31/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Cardiovascular,368.96,175.28
+C2608-00125,RM-10264,"Olsen, Carlos",E,07/31/2026,08/14/2026,Summit Imaging Center,Imaging,Digestive,397.65,280.21
+C2608-00126,RM-10288,"Mercer, Tyler",E,07/31/2026,08/14/2026,Crossroads Laboratory,Lab,Preventive,70.81,32.39
+C2608-00127,RM-10323,"Jensen, Aaron",E,07/31/2026,08/14/2026,Crossroads Laboratory,Lab,Digestive,238.45,178.83
+C2608-00128,RM-10337,"Garcia, Emma",C,07/31/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,145.05,136.89
+C2608-00129,RM-10127,"Duffy, Grace",C,08/01/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,84.79,78.07
+C2608-00130,RM-10232,"Anderson, Brian",E,08/01/2026,08/14/2026,Carmel Family Practice,Office visit,Preventive,164.21,69.70
+C2608-00131,RM-10251,"Chandler, Ella",C,08/01/2026,08/14/2026,Ridge Road Pediatrics,Office visit,Digestive,211.64,98.19
+C2608-00132,RM-10261,"Forbes, Mark",E,08/01/2026,08/14/2026,Crossroads Laboratory,Lab,Cardiovascular,115.32,53.52
+C2608-00133,RM-10378,"Nash, Megan",E,08/01/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,214.16,197.55
+C2608-00134,RM-10144,"Graves, Michael",S,08/02/2026,08/14/2026,St. Brendan Hospital,Emergency room,Injury,2296.74,1778.46
+C2608-00135,RM-10118,"Carter, Jason",E,08/03/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,131.88,123.61
+C2608-00136,RM-10198,"Nguyen, Kyle",C,08/03/2026,08/14/2026,QuickCare Urgent Care,Urgent care,Injury,256.71,186.40
+C2608-00137,RM-10205,"Graves, Anthony",E,08/03/2026,08/14/2026,Lakeview Internal Medicine,Office visit,Respiratory,197.35,116.70
+C2608-00138,RM-10213,"Coleman, Jose",S,08/03/2026,08/14/2026,Crossroads Laboratory,Lab,Preventive,281.51,156.63
+C2608-00139,RM-10214,"Kramer, Derek",E,08/03/2026,08/14/2026,Northside Primary Care,Office visit,Musculoskeletal,838.02,370.00
+C2608-00140,RM-10119,"Carter, Crystal",S,08/04/2026,08/14/2026,Motion Physical Therapy,Physical therapy,Injury,219.37,149.79
+C2608-00141,RM-10153,"Ramos, Hector",E,08/04/2026,08/14/2026,Lakeview Internal Medicine,Office visit,Preventive,326.66,164.20
+C2608-00142,RM-10215,"Vasquez, Tyler",E,08/04/2026,08/14/2026,Northside Primary Care,Office visit,Preventive,149.25,109.88
+C2608-00143,RM-10292,"Kramer, Karen",E,08/04/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,100.25,91.98
+C2608-00144,RM-10308,"Coleman, Grace",C,08/04/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,151.86,136.40
+C2608-00145,RM-10250,"Chandler, Ethan",C,08/05/2026,08/14/2026,Crossroads Laboratory,Lab,Cardiovascular,501.30,229.04
+C2608-00146,RM-10280,"Barrett, Daniel",E,08/05/2026,08/14/2026,Harbor Counseling Group,Mental health,Mental health,223.34,160.26
+C2608-00147,RM-10124,"Holt, Donna",E,08/06/2026,08/14/2026,Northside Primary Care,Office visit,Endocrine,355.47,213.08
+C2608-00148,RM-10154,"Ramos, Elena",S,08/06/2026,08/14/2026,Lakeview Cancer Institute,Infusion,Oncology,26886.32,18400.00
+C2608-00149,RM-10166,"Kramer, Mark",E,08/06/2026,08/14/2026,Crossroads Laboratory,Lab,Cardiovascular,252.19,181.16
+C2608-00150,RM-10183,"Anderson, Karen",S,08/06/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,74.93,70.07
+C2608-00151,RM-10217,"Quinn, Erin",E,08/06/2026,08/14/2026,Crossroads Laboratory,Lab,Digestive,63.60,37.75
+C2608-00152,RM-10249,"Chandler, Sophia",C,08/06/2026,08/14/2026,Crossroads Laboratory,Lab,Cardiovascular,182.46,130.63
+C2608-00153,RM-10316,"Baker, Michael",E,08/06/2026,08/14/2026,Lakeview Internal Medicine,Office visit,Preventive,132.17,95.27
+C2608-00154,RM-10369,"Keller, Lisa",S,08/06/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,175.96,154.44
+C2608-00155,RM-10381,"Nash, Ella",C,08/06/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,224.18,202.88
+C2608-00156,RM-10190,"Chandler, Eric",S,08/07/2026,08/14/2026,Crossroads Laboratory,Lab,Preventive,141.44,106.80
+C2608-00157,RM-10128,"Duffy, Olivia",C,08/08/2026,08/14/2026,Crossroads Laboratory,Lab,Preventive,414.33,202.39
+C2608-00158,RM-10194,"Lambert, Daniel",E,08/08/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,72.96,61.17
+C2608-00159,RM-10117,"Irwin, Mia",C,08/09/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,99.95,93.68
+C2608-00160,RM-10127,"Duffy, Grace",C,08/09/2026,08/14/2026,Harbor Counseling Group,Mental health,Mental health,164.18,125.00
+C2608-00161,RM-10346,"Forbes, Michelle",S,08/09/2026,08/14/2026,Lakeview Internal Medicine,Office visit,Musculoskeletal,118.63,83.63
+C2608-00162,RM-10358,"Baker, Brenda",S,08/09/2026,08/14/2026,Northside Primary Care,Office visit,Musculoskeletal,229.81,139.31
+C2608-00163,RM-10362,"Hale, Ryan",E,08/09/2026,08/14/2026,Summit Imaging Center,Imaging,Digestive,693.41,504.99
+C2608-00164,RM-10379,"Nash, Paul",S,08/09/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,48.26,40.92
+C2608-00165,RM-10396,"Keller, Daniel",E,08/09/2026,08/14/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,49.40,45.57
+C2608-00166,RM-10137,"Fleming, Sandra",E,08/10/2026,08/14/2026,Crossroads Laboratory,Lab,Digestive,173.98,113.17
+C2608-00167,RM-10207,"Fischer, Steven",E,07/22/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,226.51,223.42
+C2608-00168,RM-10283,"Lambert, Susan",E,07/22/2026,08/21/2026,Northside Primary Care,Office visit,Endocrine,149.51,71.25
+C2608-00169,RM-10294,"Edwards, Mark",S,07/22/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,237.54,207.67
+C2608-00170,RM-10151,"Irwin, Sophia",C,07/23/2026,08/21/2026,Motion Physical Therapy,Physical therapy,Injury,145.03,97.03
+C2608-00171,RM-10168,"Vance, Donna",E,07/23/2026,08/21/2026,Crossroads Laboratory,Lab,Cardiovascular,61.53,37.33
+C2608-00172,RM-10190,"Chandler, Eric",S,07/23/2026,08/21/2026,QuickCare Urgent Care,Urgent care,Injury,321.56,190.04
+C2608-00173,RM-10392,"Walker, Olivia",C,07/23/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Endocrine,286.79,209.51
+C2608-00174,RM-10114,"Fischer, Emma",C,07/24/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Preventive,142.97,106.44
+C2608-00175,RM-10136,"Novak, David",E,07/24/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,221.29,190.21
+C2608-00176,RM-10277,"Torres, Laura",E,07/24/2026,08/21/2026,Carmel Family Practice,Office visit,Cardiovascular,152.63,86.92
+C2608-00177,RM-10119,"Carter, Crystal",S,07/25/2026,08/21/2026,Carmel Family Practice,Office visit,Preventive,300.85,137.21
+C2608-00178,RM-10185,"Anderson, Eli",C,07/25/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Cardiovascular,158.04,82.36
+C2608-00179,RM-10156,"Irwin, Henry",C,07/26/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Respiratory,387.64,200.66
+C2608-00180,RM-10212,"Coleman, Jennifer",E,07/26/2026,08/21/2026,Carmel Family Practice,Office visit,Skin,174.38,83.07
+C2608-00181,RM-10219,"Hale, Denise",S,07/26/2026,08/21/2026,Crossroads Laboratory,Lab,Digestive,182.02,93.23
+C2608-00182,RM-10372,"Warren, Sophia",C,07/26/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Endocrine,296.84,209.89
+C2608-00183,RM-10392,"Walker, Olivia",C,07/26/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,37.34,35.87
+C2608-00184,RM-10256,"Novak, Brenda",E,07/27/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,30.58,24.66
+C2608-00185,RM-10376,"Fischer, Lisa",S,07/27/2026,08/21/2026,Crossroads Laboratory,Lab,Preventive,131.47,87.12
+C2608-00186,RM-10388,"Walker, Ryan",E,07/27/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,71.01,63.60
+C2608-00187,RM-10104,"Morales, Wyatt",C,07/28/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Preventive,171.20,88.74
+C2608-00188,RM-10117,"Irwin, Mia",C,07/28/2026,08/21/2026,QuickCare Urgent Care,Urgent care,Injury,387.91,261.22
+C2608-00189,RM-10296,"Edwards, Wyatt",C,07/28/2026,08/21/2026,Harbor Counseling Group,Mental health,Mental health,252.49,172.07
+C2608-00190,RM-10177,"Bishop, Caleb",C,07/29/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,63.34,50.78
+C2608-00191,RM-10265,"Sanders, Cody",E,07/29/2026,08/21/2026,Lakeview Internal Medicine,Office visit,Preventive,258.96,193.33
+C2608-00192,RM-10115,"Hale, Karen",E,07/30/2026,08/21/2026,Northside Primary Care,Office visit,Musculoskeletal,268.78,193.62
+C2608-00193,RM-10188,"Irwin, Angela",E,07/30/2026,08/21/2026,QuickCare Urgent Care,Urgent care,Skin,168.69,119.11
+C2608-00194,RM-10218,"Hale, Tyler",E,07/30/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,81.82,69.62
+C2608-00195,RM-10311,"Quinn, Mary",S,07/30/2026,08/21/2026,Crossroads Laboratory,Lab,Endocrine,74.87,43.49
+C2608-00196,RM-10393,"Garcia, Ryan",E,07/30/2026,08/21/2026,Lakeview Internal Medicine,Office visit,Skin,314.75,171.35
+C2608-00197,RM-10395,"Keller, Kimberly",E,07/30/2026,08/21/2026,Carmel Family Practice,Office visit,Endocrine,373.09,182.69
+C2608-00198,RM-10195,"Lambert, Laura",S,07/31/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,110.81,89.90
+C2608-00199,RM-10395,"Keller, Kimberly",E,07/31/2026,08/21/2026,Summit Imaging Center,Imaging,Injury,2019.49,1353.26
+C2608-00200,RM-10200,"Lopez, Adam",E,08/01/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,242.05,201.72
+C2608-00201,RM-10239,"Ellison, Henry",C,08/01/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,219.14,214.31
+C2608-00202,RM-10288,"Mercer, Tyler",E,08/01/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,58.31,52.27
+C2608-00203,RM-10385,"Quinn, Robert",S,08/01/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,184.19,181.91
+C2608-00204,RM-10232,"Anderson, Brian",E,08/02/2026,08/21/2026,St. Brendan Hospital,Emergency room,Cardiovascular,1503.47,887.09
+C2608-00205,RM-10114,"Fischer, Emma",C,08/03/2026,08/21/2026,Crossroads Laboratory,Lab,Endocrine,63.52,45.25
+C2608-00206,RM-10195,"Lambert, Laura",S,08/03/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,60.70,54.07
+C2608-00207,RM-10151,"Irwin, Sophia",C,08/04/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,64.92,62.91
+C2608-00208,RM-10182,"Anderson, Luis",E,08/04/2026,08/21/2026,Motion Physical Therapy,Physical therapy,Injury,278.90,139.69
+C2608-00209,RM-10258,"Rhodes, James",E,08/04/2026,08/21/2026,Lakeview Imaging,Imaging,Musculoskeletal,1708.76,1025.95
+C2608-00210,RM-10293,"Edwards, Kimberly",E,08/04/2026,08/21/2026,Crossroads Laboratory,Lab,Preventive,198.00,89.81
+C2608-00211,RM-10330,"Chandler, Michael",E,08/04/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,32.56,30.50
+C2608-00212,RM-10395,"Keller, Kimberly",E,08/04/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,67.18,61.37
+C2608-00213,RM-10174,"Gentry, Amber",E,08/05/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,40.65,39.52
+C2608-00214,RM-10214,"Kramer, Derek",E,08/05/2026,08/21/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,325.63,140.00
+C2608-00215,RM-10127,"Duffy, Grace",C,08/06/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Cardiovascular,234.25,141.76
+C2608-00216,RM-10158,"Holt, Mary",E,08/06/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,210.15,177.95
+C2608-00217,RM-10166,"Kramer, Mark",E,08/07/2026,08/21/2026,Crossroads Laboratory,Lab,Digestive,85.85,46.81
+C2608-00218,RM-10178,"Bishop, Lucas",C,08/07/2026,08/21/2026,Summit Imaging Center,Imaging,Digestive,1358.14,976.43
+C2608-00219,RM-10207,"Fischer, Steven",E,08/07/2026,08/21/2026,Northside Primary Care,Office visit,Cardiovascular,274.67,115.67
+C2608-00220,RM-10214,"Kramer, Derek",E,08/07/2026,08/21/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,202.78,140.00
+C2608-00221,RM-10388,"Walker, Ryan",E,08/07/2026,08/21/2026,QuickCare Urgent Care,Urgent care,Injury,291.79,167.61
+C2608-00222,RM-10277,"Torres, Laura",E,08/08/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,279.01,224.23
+C2608-00223,RM-10390,"Walker, Emma",C,08/08/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,89.50,76.74
+C2608-00224,RM-10119,"Carter, Crystal",S,08/09/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,269.62,237.52
+C2608-00225,RM-10174,"Gentry, Amber",E,08/09/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,33.51,31.02
+C2608-00226,RM-10185,"Anderson, Eli",C,08/09/2026,08/21/2026,Crossroads Laboratory,Lab,Cardiovascular,353.57,191.95
+C2608-00227,RM-10339,"Holt, Steven",E,08/09/2026,08/21/2026,Lakeview Internal Medicine,Office visit,Digestive,151.90,70.52
+C2608-00228,RM-10391,"Walker, Caleb",C,08/10/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Respiratory,291.25,147.14
+C2608-00229,RM-10165,"Lambert, Linda",S,08/11/2026,08/21/2026,Harbor Counseling Group,Mental health,Mental health,265.26,143.86
+C2608-00230,RM-10255,"Irwin, Owen",C,08/11/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Preventive,397.79,185.00
+C2608-00231,RM-10256,"Novak, Brenda",E,08/11/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,271.69,237.36
+C2608-00232,RM-10271,"Baker, Monica",E,08/11/2026,08/21/2026,Crossroads Laboratory,Lab,Cardiovascular,451.39,208.86
+C2608-00233,RM-10295,"Edwards, Ella",C,08/11/2026,08/21/2026,Harbor Counseling Group,Mental health,Mental health,244.64,179.00
+C2608-00234,RM-10328,"Novak, Ava",C,08/11/2026,08/21/2026,Lakeview Imaging,Imaging,Injury,946.68,427.91
+C2608-00235,RM-10108,"Walker, Adam",E,08/12/2026,08/21/2026,Harbor Counseling Group,Mental health,Mental health,323.27,141.22
+C2608-00236,RM-10214,"Kramer, Derek",E,08/12/2026,08/21/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,249.57,140.00
+C2608-00237,RM-10285,"Porter, Dale",E,08/12/2026,08/21/2026,Northside Surgery Center,Outpatient surgery,Musculoskeletal,3272.18,2140.00
+C2608-00238,RM-10327,"Novak, Ruby",C,08/12/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,152.40,137.81
+C2608-00239,RM-10394,"Duffy, Denise",E,08/12/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,63.14,59.46
+C2608-00240,RM-10154,"Ramos, Elena",S,08/13/2026,08/21/2026,Summit Imaging Center,Imaging,Oncology,4073.06,3100.00
+C2608-00241,RM-10220,"Underwood, Paul",E,08/13/2026,08/21/2026,Crossroads Laboratory,Lab,Cardiovascular,105.86,73.46
+C2608-00242,RM-10248,"Chandler, Scott",S,08/13/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,240.92,238.37
+C2608-00243,RM-10383,"Mercer, Carlos",E,08/13/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,15.36,13.06
+C2608-00244,RM-10115,"Hale, Karen",E,08/14/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,95.17,79.12
+C2608-00245,RM-10156,"Irwin, Henry",C,08/14/2026,08/21/2026,Ridge Road Pediatrics,Office visit,Skin,124.26,78.24
+C2608-00246,RM-10172,"Fleming, Ella",C,08/14/2026,08/21/2026,Lakeview Imaging,Imaging,Musculoskeletal,764.27,411.68
+C2608-00247,RM-10214,"Kramer, Derek",E,08/14/2026,08/21/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,226.94,140.00
+C2608-00248,RM-10237,"Novak, Kevin",E,08/14/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,196.02,170.07
+C2608-00249,RM-10120,"Edwards, Monica",E,08/15/2026,08/21/2026,Lakeview Imaging,Imaging,Digestive,2584.17,1438.73
+C2608-00250,RM-10253,"Rhodes, Chloe",C,08/15/2026,08/21/2026,QuickCare Urgent Care,Urgent care,Injury,484.63,270.23
+C2608-00251,RM-10102,"Morales, Maria",E,08/16/2026,08/21/2026,Motion Physical Therapy,Physical therapy,Injury,235.78,107.46
+C2608-00252,RM-10164,"Lambert, Jose",E,08/16/2026,08/21/2026,Carmel Family Practice,Office visit,Skin,418.25,180.27
+C2608-00253,RM-10362,"Hale, Ryan",E,08/16/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,52.79,46.90
+C2608-00254,RM-10387,"Quinn, Olivia",C,08/16/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,237.43,197.54
+C2608-00255,RM-10111,"Dawson, Jennifer",E,08/17/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,70.82,59.48
+C2608-00256,RM-10118,"Carter, Jason",E,08/17/2026,08/21/2026,Harbor Counseling Group,Mental health,Mental health,244.90,154.94
+C2608-00257,RM-10198,"Nguyen, Kyle",C,08/17/2026,08/21/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,108.32,92.15
+C2608-00258,RM-10160,"Vance, Eli",C,07/29/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,8.87,7.54
+C2608-00259,RM-10190,"Chandler, Eric",S,07/29/2026,08/28/2026,Motion Physical Therapy,Physical therapy,Injury,227.57,114.85
+C2608-00260,RM-10208,"Fischer, Caleb",C,07/30/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Digestive,90.81,70.34
+C2608-00261,RM-10226,"Fischer, Henry",C,07/30/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,10.59,10.58
+C2608-00262,RM-10110,"Warren, Derek",E,07/31/2026,08/28/2026,Carmel Family Practice,Office visit,Skin,230.28,115.54
+C2608-00263,RM-10119,"Carter, Crystal",S,07/31/2026,08/28/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,129.65,93.18
+C2608-00264,RM-10224,"Fischer, Brenda",S,07/31/2026,08/28/2026,Lakeview Internal Medicine,Office visit,Preventive,154.20,95.86
+C2608-00265,RM-10231,"Coleman, Liam",C,07/31/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Preventive,240.72,178.39
+C2608-00266,RM-10298,"Garcia, Adam",S,07/31/2026,08/28/2026,Harbor Counseling Group,Mental health,Mental health,310.09,153.18
+C2608-00267,RM-10373,"Warren, Mia",C,07/31/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Skin,135.13,85.65
+C2608-00268,RM-10164,"Lambert, Jose",E,08/02/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,121.41,116.27
+C2608-00269,RM-10204,"Kramer, Luis",E,08/02/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,17.88,16.12
+C2608-00270,RM-10237,"Novak, Kevin",E,08/02/2026,08/28/2026,Harbor Counseling Group,Mental health,Mental health,164.59,125.73
+C2608-00271,RM-10350,"Garcia, Daniel",S,08/02/2026,08/28/2026,Crossroads Laboratory,Lab,Preventive,114.48,60.00
+C2608-00272,RM-10173,"Fleming, Levi",C,08/03/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Musculoskeletal,133.45,79.02
+C2608-00273,RM-10202,"Lopez, Mason",C,08/03/2026,08/28/2026,QuickCare Urgent Care,Urgent care,Respiratory,268.51,173.57
+C2608-00274,RM-10247,"Chandler, Monica",E,08/03/2026,08/28/2026,Crossroads Laboratory,Lab,Endocrine,57.82,27.79
+C2608-00275,RM-10294,"Edwards, Mark",S,08/03/2026,08/28/2026,QuickCare Urgent Care,Urgent care,Skin,365.94,229.27
+C2608-00276,RM-10328,"Novak, Ava",C,08/03/2026,08/28/2026,Harbor Counseling Group,Mental health,Mental health,127.82,91.24
+C2608-00277,RM-10348,"Forbes, Levi",C,08/03/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Cardiovascular,219.02,125.64
+C2608-00278,RM-10144,"Graves, Michael",S,08/04/2026,08/28/2026,Lakeview Imaging,Imaging,Injury,328.22,175.52
+C2608-00279,RM-10169,"Vance, Lucas",C,08/04/2026,08/28/2026,Crossroads Laboratory,Lab,Preventive,484.13,219.99
+C2608-00280,RM-10179,"Torres, Lisa",E,08/04/2026,08/28/2026,QuickCare Urgent Care,Urgent care,Injury,331.03,192.32
+C2608-00281,RM-10356,"Walker, Emma",C,08/04/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,129.52,108.66
+C2608-00282,RM-10396,"Keller, Daniel",E,08/04/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,141.96,131.80
+C2608-00283,RM-10221,"Underwood, Susan",S,08/05/2026,08/28/2026,Lakeview Internal Medicine,Office visit,Musculoskeletal,154.46,97.88
+C2608-00284,RM-10287,"Garcia, Ryan",E,08/05/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,38.29,33.71
+C2608-00285,RM-10288,"Mercer, Tyler",E,08/05/2026,08/28/2026,Crossroads Laboratory,Lab,Preventive,35.86,20.90
+C2608-00286,RM-10358,"Baker, Brenda",S,08/06/2026,08/28/2026,Northside Primary Care,Office visit,Skin,283.31,139.06
+C2608-00287,RM-10119,"Carter, Crystal",S,08/07/2026,08/28/2026,Crossroads Laboratory,Lab,Preventive,150.50,89.22
+C2608-00288,RM-10139,"Jacobs, David",E,08/07/2026,08/28/2026,Carmel Family Practice,Office visit,Musculoskeletal,360.07,161.15
+C2608-00289,RM-10162,"Sanders, Donna",E,08/07/2026,08/28/2026,QuickCare Urgent Care,Urgent care,Injury,290.14,158.24
+C2608-00290,RM-10182,"Anderson, Luis",E,08/07/2026,08/28/2026,Lakeview Imaging,Imaging,Musculoskeletal,1327.84,933.42
+C2608-00291,RM-10350,"Garcia, Daniel",S,08/07/2026,08/28/2026,Crossroads Laboratory,Lab,Preventive,363.84,202.43
+C2608-00292,RM-10354,"Ellison, Karen",E,08/07/2026,08/28/2026,Lakeview Internal Medicine,Office visit,Musculoskeletal,325.63,211.74
+C2608-00293,RM-10130,"Hughes, Jack",C,08/08/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Respiratory,219.85,164.40
+C2608-00294,RM-10301,"Garcia, Ethan",C,08/08/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Preventive,350.79,171.77
+C2608-00295,RM-10362,"Hale, Ryan",E,08/08/2026,08/28/2026,Carmel Family Practice,Office visit,Musculoskeletal,170.45,95.63
+C2608-00296,RM-10362,"Hale, Ryan",E,08/08/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,77.36,68.80
+C2608-00297,RM-10373,"Warren, Mia",C,08/08/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Digestive,237.58,127.84
+C2608-00298,RM-10106,"Morales, Lily",C,08/09/2026,08/28/2026,Crossroads Laboratory,Lab,Cardiovascular,471.72,222.09
+C2608-00299,RM-10125,"Duffy, Linda",E,08/09/2026,08/28/2026,Northside Primary Care,Office visit,Cardiovascular,218.27,112.74
+C2608-00300,RM-10207,"Fischer, Steven",E,08/09/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,135.96,109.77
+C2608-00301,RM-10301,"Garcia, Ethan",C,08/09/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Preventive,148.45,101.28
+C2608-00302,RM-10210,"Diaz, Scott",E,08/10/2026,08/28/2026,Crossroads Laboratory,Lab,Cardiovascular,154.42,91.25
+C2608-00303,RM-10269,"Hale, Amber",E,08/10/2026,08/28/2026,Northside Primary Care,Office visit,Skin,278.07,214.86
+C2608-00304,RM-10161,"Vance, Mason",C,08/11/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Respiratory,411.72,202.42
+C2608-00305,RM-10236,"Owens, Brian",E,08/11/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,43.98,35.96
+C2608-00306,RM-10259,"Rhodes, Kimberly",S,08/11/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,196.67,175.57
+C2608-00307,RM-10152,"Irwin, Ella",C,08/12/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,84.45,71.37
+C2608-00308,RM-10263,"Warren, Derek",E,08/13/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,28.40,24.28
+C2608-00309,RM-10342,"Forbes, Travis",E,08/13/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,87.90,74.78
+C2608-00310,RM-10363,"Duffy, Heather",E,08/13/2026,08/28/2026,Summit Imaging Center,Imaging,Injury,909.46,556.34
+C2608-00311,RM-10183,"Anderson, Karen",S,08/14/2026,08/28/2026,Harbor Counseling Group,Mental health,Mental health,239.87,112.18
+C2608-00312,RM-10233,"Anderson, Wyatt",C,08/14/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,102.61,87.48
+C2608-00313,RM-10256,"Novak, Brenda",E,08/14/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,20.19,17.83
+C2608-00314,RM-10261,"Forbes, Mark",E,08/14/2026,08/28/2026,Northside Primary Care,Office visit,Skin,360.75,214.50
+C2608-00315,RM-10294,"Edwards, Mark",S,08/15/2026,08/28/2026,Northside Primary Care,Office visit,Endocrine,148.63,87.82
+C2608-00316,RM-10343,"Forbes, Wyatt",C,08/15/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,204.99,179.31
+C2608-00317,RM-10353,"Warren, Marcus",E,08/15/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,219.84,212.60
+C2608-00318,RM-10130,"Hughes, Jack",C,08/16/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,14.98,14.63
+C2608-00319,RM-10336,"Garcia, Eric",S,08/16/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,88.92,83.06
+C2608-00320,RM-10299,"Garcia, Liam",C,08/17/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Digestive,222.48,170.68
+C2608-00321,RM-10310,"Quinn, Tyler",E,08/17/2026,08/28/2026,Summit Imaging Center,Imaging,Injury,1918.27,1120.28
+C2608-00322,RM-10368,"Keller, Brian",E,08/17/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,199.84,179.07
+C2608-00323,RM-10119,"Carter, Crystal",S,08/18/2026,08/28/2026,Crossroads Laboratory,Lab,Preventive,206.69,129.16
+C2608-00324,RM-10359,"Ellison, Maria",E,08/18/2026,08/28/2026,Northside Primary Care,Office visit,Respiratory,210.48,100.93
+C2608-00325,RM-10367,"Baker, Kevin",E,08/18/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,120.11,100.67
+C2608-00326,RM-10214,"Kramer, Derek",E,08/19/2026,08/28/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,238.47,140.00
+C2608-00327,RM-10301,"Garcia, Ethan",C,08/19/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,228.04,184.60
+C2608-00328,RM-10106,"Morales, Lily",C,08/20/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Digestive,265.38,206.14
+C2608-00329,RM-10154,"Ramos, Elena",S,08/20/2026,08/28/2026,Lakeview Cancer Institute,Infusion,Oncology,27768.16,16000.00
+C2608-00330,RM-10293,"Edwards, Kimberly",E,08/20/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,144.29,127.78
+C2608-00331,RM-10364,"Duffy, Lily",C,08/20/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Endocrine,240.50,172.04
+C2608-00332,RM-10106,"Morales, Lily",C,08/21/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Digestive,228.51,149.02
+C2608-00333,RM-10121,"Edwards, Sophia",C,08/21/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,142.92,130.90
+C2608-00334,RM-10122,"Edwards, Zoe",C,08/21/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,229.29,213.70
+C2608-00335,RM-10214,"Kramer, Derek",E,08/21/2026,08/28/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,199.60,140.00
+C2608-00336,RM-10277,"Torres, Laura",E,08/21/2026,08/28/2026,Crossroads Laboratory,Lab,Preventive,197.33,114.53
+C2608-00337,RM-10283,"Lambert, Susan",E,08/21/2026,08/28/2026,QuickCare Urgent Care,Urgent care,Skin,189.09,122.92
+C2608-00338,RM-10285,"Porter, Dale",E,08/21/2026,08/28/2026,Summit Imaging Center,Imaging,Musculoskeletal,2433.43,1272.30
+C2608-00339,RM-10348,"Forbes, Levi",C,08/21/2026,08/28/2026,Ridge Road Pediatrics,Office visit,Preventive,290.84,193.16
+C2608-00340,RM-10241,"Ellison, Ava",C,08/22/2026,08/28/2026,Crossroads Laboratory,Lab,Digestive,195.09,118.51
+C2608-00341,RM-10135,"Duffy, Laura",S,08/23/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,70.72,70.21
+C2608-00342,RM-10193,"Dawson, Monica",S,08/23/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,29.02,25.94
+C2608-00343,RM-10244,"Duffy, Jason",E,08/23/2026,08/28/2026,Northside Primary Care,Office visit,Musculoskeletal,262.35,139.96
+C2608-00344,RM-10279,"Kramer, Zoe",C,08/23/2026,08/28/2026,Motion Physical Therapy,Physical therapy,Musculoskeletal,147.21,95.40
+C2608-00345,RM-10143,"Graves, Teresa",E,08/24/2026,08/28/2026,Northside Primary Care,Office visit,Preventive,227.41,96.52
+C2608-00346,RM-10155,"Irwin, Adam",E,08/24/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,146.81,123.47
+C2608-00347,RM-10264,"Olsen, Carlos",E,08/24/2026,08/28/2026,Meridian Pharmacy Network,Pharmacy,Pharmacy,65.71,59.97
+C2608-00348,RM-10388,"Walker, Ryan",E,08/24/2026,08/28/2026,QuickCare Urgent Care,Urgent care,Respiratory,308.59,202.44

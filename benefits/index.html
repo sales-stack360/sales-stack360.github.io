@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Benefits Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;650;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/app.css">
+<style>
+  :root{--accent:#4f46e5;--accent-2:#4338ca;--accent-w:#eef0ff;--accent-ink:#3730a3;--side:#0e1325;--side-2:#1a2038}
+</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%234f46e5'/><path d='M9 16h14M16 9v14' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>">
+</head>
+<body>
+<div class="login" id="login">
+  <div class="login-l">
+    <div class="mark"><div class="mark-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5v14"/></svg></div><div style="font-size:17px">Benefits Desk<small>Crestline Benefit Partners · sample workspace</small></div></div>
+    <div>
+      <h1>The busywork of a benefits practice, handled.</h1>
+      <p>Census cleanup, carrier quote comparisons, self-funded bids, renewals, billing checks, commissions, compliance notices and the service inbox, in one place.</p>
+      <div class="login-feats">
+        <div class="login-feat"><i>1</i><span><b style="color:#fff">Reads what carriers and HR send</b> — PDFs, spreadsheets and emails in whatever layout they arrive.</span></div>
+        <div class="login-feat"><i>2</i><span><b style="color:#fff">Does the comparison and the checking</b> — side-by-sides, invoice and payroll matching, eligibility.</span></div>
+        <div class="login-feat"><i>3</i><span><b style="color:#fff">Drafts the output</b> — client proposals, savings reports, carrier changes, replies and notices for review.</span></div>
+      </div>
+    </div>
+    <div class="login-foot">Sample data. All companies, people, carriers and figures are fictional.</div>
+  </div>
+  <div class="login-r">
+    <form class="login-box" id="loginForm">
+      <h2>Sign in</h2><p>Crestline Benefit Partners</p>
+      <div class="field"><label>Work email</label><input class="input" id="email" value="morgan.hale@crestline.example"></div>
+      <div class="field"><label>Password</label><input class="input" type="password" value="demo-password"></div>
+      <button class="btn primary" style="width:100%;justify-content:center;padding:10px" type="submit">Sign in</button>
+      <div class="users" id="users"></div>
+    </form>
+  </div>
+</div>
+
+<div class="shell hide" id="shell">
+  <aside class="side">
+    <div class="side-top"><div class="mark"><div class="mark-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5v14"/></svg></div><div>Benefits Desk</div></div></div>
+    <div class="ws"><span class="dot"></span>Crestline Benefit Partners</div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-user" id="me"></div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumbs" id="crumbs"></div>
+      <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search groups, people, documents<kbd>⌘K</kbd></div>
+      <button class="top-ic" onclick="location.hash='#/inbox'" aria-label="Notifications"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="pip"></span></button>
+    </header>
+    <main class="page" id="view"></main>
+  </div>
+</div>
+<script src="../shared/core.js"></script>
+<script src="../shared/guide.js"></script>
+<script src="data.js"></script>
+<script src="parsers.js"></script>
+<script src="app.js"></script>
+<script src="ops.js"></script>
+</body>
+</html>
