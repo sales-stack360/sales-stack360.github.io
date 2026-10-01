@@ -30,7 +30,7 @@ const DATA = {
       formulary: { "Eliquis": 4, "Jardiance": 4, "Metformin ER": 1, "Atorvastatin": 1, "Lisinopril": 1, "Levothyroxine": 1 },
       network: { "Westshore Family Medicine": true, "Bay Heart Associates": false, "Tampa Diabetes & Thyroid Center": true },
       travel: false, travelNote: "Emergency and urgent care only outside the Tampa Bay service area", extras: "Dental $2,000 a year · over-the-counter $75 a quarter · gym" },
-    { id: "medigap", name: "Medigap Plan G + Heritage Rx", type: "Medigap + PDP", carrier: "Keystone Life · Heritage Rx", planId: "Plan G · S4102-008", stars: 4.0, medigap: true,
+    { id: "medigap", name: "Medigap Plan G + Heritage Rx", type: "Medigap + PDP", carrier: "Fairhaven Life · Heritage Rx", planId: "Plan G · S4102-008", stars: 4.0, medigap: true,
       premium: 206, moop: null, pcp: 0, spec: 0, partBDed: 283, drugDed: 0, dedTiers: [], copay: { 1: 1, 2: 6, 3: 45, 4: 95, 5: 0 },
       formulary: { "Eliquis": 3, "Jardiance": 3, "Metformin ER": 1, "Atorvastatin": 1, "Lisinopril": 1, "Levothyroxine": 1 },
       network: { "Westshore Family Medicine": true, "Bay Heart Associates": true, "Tampa Diabetes & Thyroid Center": true },
@@ -41,7 +41,7 @@ const DATA = {
   clients: [
     { id: "margaret-collins", name: "Margaret Collins", age: 71, city: "Tampa", plan: "Suncoast Advantage Plus (HMO)", changes: ["Premium $0 → $29", "Eliquis tier 3 → 4", "Endocrinologist leaving network"], impact: 1208, stage: "Comparison ready", kind: "warn", appt: "2026-10-16" },
     { id: "ruth-delgado", name: "Ruth Delgado", age: 70, city: "Tampa", plan: "Gulfstream Choice (PPO)", changes: ["Lantus moves to tier 4"], impact: 660, stage: "Comparison ready", kind: "warn", appt: "2026-10-17" },
-    { id: "harold-jensen", name: "Harold Jensen", age: 76, city: "Clearwater", plan: "Medigap Plan G · Keystone Life", changes: ["Rate up 14% at renewal"], impact: 340, stage: "Shop Medigap", kind: "warn", appt: "2026-10-20" },
+    { id: "harold-jensen", name: "Harold Jensen", age: 76, city: "Clearwater", plan: "Medigap Plan G · Fairhaven Life", changes: ["Rate up 14% at renewal"], impact: 340, stage: "Shop Medigap", kind: "warn", appt: "2026-10-20" },
     { id: "frank-oduya", name: "Frank Oduya", age: 74, city: "Lutz", plan: "Suncoast Advantage Plus (HMO)", changes: ["Premium $0 → $29", "Specialist $30 → $45"], impact: 438, stage: "Comparison ready", kind: "warn", appt: "2026-10-21" },
     { id: "walter-price", name: "Walter Price", age: 73, city: "Riverview", plan: "Suncoast Rx Basic (PDP)", changes: ["Premium $12 → $31", "May qualify for Extra Help"], impact: 228, stage: "Check Extra Help", kind: "info", appt: "2026-10-22" },
     { id: "barbara-singh", name: "Barbara Singh", age: 69, city: "Plant City", plan: "Heritage Rx Select (PDP)", changes: ["Deductible $0 → $250"], impact: 250, stage: "Comparison ready", kind: "warn", appt: "2026-10-23" },

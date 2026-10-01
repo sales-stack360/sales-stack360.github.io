@@ -54,6 +54,7 @@
     const r = target.getBoundingClientRect(), pad = 6;
     Object.assign(ring.style, { left: r.left - pad + "px", top: r.top - pad + "px", width: r.width + pad * 2 + "px", height: r.height + pad * 2 + "px" });
     const pw = pop.offsetWidth, ph = pop.offsetHeight, gap = 16, m = 12;
+    if (innerWidth < 700) { pop.style.left = m + "px"; pop.style.top = Math.max(64, innerHeight - ph - m) + "px"; return; }   // phones: a sheet along the bottom
     const fits = (x, y) => x >= m && y >= m && x + pw <= innerWidth - m && y + ph <= innerHeight - m;
     const clampY = y => Math.max(m, Math.min(y, innerHeight - ph - m)), clampX = x => Math.max(m, Math.min(x, innerWidth - pw - m));
     const cand = { right: [r.right + gap, clampY(r.top)], left: [r.left - pw - gap, clampY(r.top)], below: [clampX(r.left), r.bottom + gap], above: [clampX(r.left), r.top - ph - gap] };
@@ -202,7 +203,8 @@
     }
     if (s.before) { try { await s.before(); } catch (e) { } await sleep(200); if (idx !== i) return; target = (s.target && document.querySelector(s.target)) || target; }
     if (!target) target = $(".page-head") || $("#view");
-    target.scrollIntoView({ block: s.block || "center", behavior: "smooth" });
+    if (innerWidth < 700) window.scrollTo({ top: Math.max(0, target.getBoundingClientRect().top + scrollY - 70), behavior: "smooth" });   // phones: target just under the top bar, above the sheet
+    else target.scrollIntoView({ block: s.block || "center", behavior: "smooth" });
     await sleep(380); if (idx !== i) return;
 
     const mode = s.files ? "files" : s.advance === "click" ? "click" : "next";
@@ -293,5 +295,6 @@
         actions: [{ label: "Explore on my own" }, { label: `Take the guided demo · ${cfg.minutes} min`, primary: true, onClick: () => setTimeout(() => show(0), 100) }] });
     },
     start: i => show(i || 0), end,
+    config: () => cfg,   // read-only view for automated checks
   };
 })();

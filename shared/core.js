@@ -285,6 +285,18 @@
   });
   document.addEventListener("click", e => { if (e.target.closest(".topbar .search")) openPalette(); });
 
+  /* ---------- phones: the sidebar opens from a menu button in the top bar ---------- */
+  const topbar = document.querySelector(".topbar");
+  if (topbar) {
+    const mb = document.createElement("button"); mb.className = "top-ic menu-btn"; mb.type = "button"; mb.setAttribute("aria-label", "Menu");
+    mb.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>`;
+    topbar.prepend(mb);
+    const shade = document.createElement("div"); shade.className = "nav-shade"; document.body.appendChild(shade);
+    const close = () => document.body.classList.remove("nav-open");
+    mb.onclick = () => document.body.classList.toggle("nav-open"); shade.onclick = close;
+    window.addEventListener("hashchange", close);
+  }
+
   window.UI = { $, $$, esc, sleep, money, num, pct, fdate, TODAY, daysUntil, initials, parseMoney, icon, toast, modal,
     route, go, render, setOnNav: f => (onNav = f), api, setBackend, printOnly, setPalette: f => (paletteItems = f), openPalette, pdfPreview, pdfThumb, csvPreview, textPreview, tagTable, slug, parseCSV, toCSV, download, fetchSample, ext, kb, pdfLines, runSteps, dropzone };
 })();

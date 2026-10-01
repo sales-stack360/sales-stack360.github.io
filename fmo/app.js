@@ -12,11 +12,11 @@
   const m2 = n => n == null ? "—" : money(n, 2);
   const us = Contract.us;
   const readyA = () => !!(S.intake && S.license && S.eo && S.training);
-  const readyC = () => !!(S.stmts.crestline && S.stmts.bluewater);
+  const readyC = () => !!(S.stmts.ashford && S.stmts.bluewater);
   const calcA = () => readyA() ? Contract.evaluate(S.intake, S.license, S.eo, S.training, TODAY) : null;
   let memoC = null;
-  const calcC = () => { if (!readyC()) return null; if (memoC && memoC.a === S.stmts.crestline && memoC.b === S.stmts.bluewater) return memoC.v;
-    const R = Comm.reconcile([S.stmts.crestline, S.stmts.bluewater]); memoC = { a: S.stmts.crestline, b: S.stmts.bluewater, v: { R, P: Comm.payouts(R) } }; return memoC.v; };
+  const calcC = () => { if (!readyC()) return null; if (memoC && memoC.a === S.stmts.ashford && memoC.b === S.stmts.bluewater) return memoC.v;
+    const R = Comm.reconcile([S.stmts.ashford, S.stmts.bluewater]); memoC = { a: S.stmts.ashford, b: S.stmts.bluewater, v: { R, P: Comm.payouts(R) } }; return memoC.v; };
 
   function setPage(crumbs, html) {
     $("#crumbs").innerHTML = crumbs.map((c, i) => i === crumbs.length - 1 ? `<b>${esc(c[0])}</b>` : `<a href="${c[1]}">${esc(c[0])}</a><span>/</span>`).join(" ");
@@ -45,7 +45,7 @@
       <div class="grid g4" style="margin-bottom:16px">
         ${kpi(`${icon("users")} Agents contracting`, DATA.pipeline.filter(p => p.stage !== "Ready for AEP").length, `${DATA.pipeline.filter(p => p.kind === "crit").length} blocked before AEP`)}
         ${kpi(`${icon("check")} Ready to sell for AEP`, "41 of 48", "agents appointed with every carrier they asked for")}
-        ${kpi(`${icon("dollar")} September statements`, c ? "Reconciled" : "2 in", c ? `${m2(c.R.owed)} owed by carriers` : "Crestline (CSV) and Bluewater (PDF)", !!c)}
+        ${kpi(`${icon("dollar")} September statements`, c ? "Reconciled" : "2 in", c ? `${m2(c.R.owed)} owed by carriers` : "Ashford (CSV) and Bluewater (PDF)", !!c)}
         ${kpi(`${icon("clock")} Work handled · September ${I("Estimated from how long it takes by hand: about 90 minutes to check a contracting packet against five carriers, and three hours to reconcile a carrier statement against the book.")}`, "71 hrs", `<span class="up">+22 hrs</span> vs August`)}
       </div>
       <div class="grid g-main-l">
@@ -184,7 +184,7 @@
     setPage([["September commissions"]], `${head("September commissions", `Carrier statements against Harborline's book · ${BOOK.agents.length} writing agents · payouts Friday, September 18`,
       c ? `<span class="chip ${S.disputed ? "info" : "warn"}">${S.disputed ? "Disputes sent" : `${m2(c.R.owed)} owed by carriers`}</span>` : `<span class="chip plain">2 statements in</span>`)}
       <div class="tabs">${tabs.map(([k, l]) => `<a href="${BC}/${k}" class="${tab === k ? "on" : ""}">${l}${k === "statements" && S.sdocs.length ? `<span class="cnt">${S.sdocs.length}</span>` : ""}${k === "recon" && c && !S.disputed ? `<span class="cnt hot">${c.R.issues.length}</span>` : ""}</a>`).join("")}</div>
-      ${!c ? next("Start", "<b>Load the statements.</b> Crestline's CSV export and Bluewater's PDF.") : ({
+      ${!c ? next("Start", "<b>Load the statements.</b> Ashford's CSV export and Bluewater's PDF.") : ({
         statements: next("Step 1 of 3", "<b>Both statements read.</b> Next, every line against the book.", `<a class="btn sm primary" href="${BC}/recon">${icon("scale")}Reconciliation</a>`),
         recon: next("Step 2 of 3", S.disputed ? "<b>Disputes sent.</b> Then the payouts." : "<b>Every policy against what the carrier paid.</b>", `<a class="btn sm primary" href="${BC}/payouts">${icon("dollar")}Agent payouts</a>`),
         payouts: next("Step 3 of 3", `<b>${S.approved ? "Approved. Statements go to each agent Friday." : "Each agent paid for what they wrote."}</b>`, "", S.approved) }[tab] || "")}
@@ -198,7 +198,7 @@
       <div class="card"><div class="card-b"><div class="drop" id="cDrop"><div class="ic">${icon("upload")}</div><b>Drop carrier commission statements</b><div class="hint">Any carrier, CSV export or PDF statement.</div>
         <div style="margin-top:14px"><button class="btn primary" id="cSample">${icon("file")}Load September statements</button></div></div><div id="cRun" style="margin-top:14px"></div></div></div>
       ${S.sdocs.length ? card("Statements read", S.sdocs.map(d => `<div class="file-row"><div class="file-ic ${UI.ext(d.name) === "pdf" ? "pdf" : "csv"}">${UI.ext(d.name).toUpperCase()}</div><div class="meta"><b>${esc(d.name)}</b><small>${d.carrier ? `${esc(DATA.carriers[d.carrier].name)} · ${d.lines} lines · ${m2(d.total)}` : "Not recognized as a commission statement"}</small></div>${d.carrier ? '<span class="chip ok">Read</span>' : '<span class="chip warn">Not recognized</span>'}</div>`).join(""),
-        { tight: true, guide: "stmts-read", foot: readyC() ? `<a class="btn primary" href="${BC}/recon">${icon("arrow")}Reconcile</a>` : `<span class="muted" style="font-size:12.5px">Add Crestline's and Bluewater's statements.</span>` }) : ""}
+        { tight: true, guide: "stmts-read", foot: readyC() ? `<a class="btn primary" href="${BC}/recon">${icon("arrow")}Reconcile</a>` : `<span class="muted" style="font-size:12.5px">Add Ashford's and Bluewater's statements.</span>` }) : ""}
     </div>
     <div class="stack">${card("What gets pulled out", `<div class="steps">${["Every policy paid, with its member and effective date", "The writing agent's name and NPN", "New, renewal or chargeback, and the amount", "Premium and rate, where commission is a percentage"].map(t => `<div class="step done"><span class="s-ic"></span><span>${t}</span></div>`).join("")}</div>`)}</div>
     </div>`;
@@ -225,8 +225,8 @@
   }
 
   function dispute(R) {
-    const cr = R.issues.filter(r => r.p.carrier === "crestline"), bw = R.issues.filter(r => r.p.carrier === "bluewater");
-    return `To: Crestline Health, agent commissions
+    const cr = R.issues.filter(r => r.p.carrier === "ashford"), bw = R.issues.filter(r => r.p.carrier === "bluewater");
+    return `To: Ashford Health, agent commissions
 Re: Harborline Insurance Marketing, September 2026 statement
 
 ${cr.filter(r => r.status === "missing").length} enrollments effective ${us(Parsers.iso(cr.find(r => r.status === "missing")?.p.eff || ""))} were not paid:
@@ -265,13 +265,13 @@ ${DATA.firm}`;
         ${card("Exceptions", `<div class="tbl-wrap"><table class="t"><thead><tr><th>Policy</th><th>Member</th><th>Writing agent</th><th>Carrier</th><th>Effective</th><th class="num">Due</th><th class="num">Paid</th><th>Issue</th></tr></thead><tbody>
           ${[...R.issues, ...R.chargebacks].map(issueRow).join("")}</tbody></table></div>`, { tight: true, guide: "exceptions", sub: `${R.issues.length} to fix · ${R.chargebacks.length} chargeback checked and correct` })}
         <div class="grid g-main-l">
-          ${S.disputed ? `<div class="card" data-guide="dispute"><div class="card-b" data-guide="disp-ok"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="chip ok">Sent</span><span class="muted" style="font-size:13px">Crestline has the ${R.issues.filter(r => r.p.carrier === "crestline").length} policies and ${m2(R.owed)} owed. Bluewater has the agent-of-record correction. Both are tracked until they show up on October's statements.</span></div></div></div>`
-            : card("Disputes, drafted", `<div class="letter">${esc(dispute(R))}</div>`, { guide: "dispute", foot: `<button class="btn primary" id="dispute">${icon("send")}Send to Crestline and Bluewater</button>` })}
-          <div class="stack">${card("Checked and correct", `${R.chargebacks.map(r => `<div class="fix"><span class="chip info plain">Chargeback</span><div><b>${esc(r.p.first)} ${esc(r.p.last)} · ${m2(r.paid)}</b><small>Effective ${esc(r.p.eff)}, disenrolled ${esc(r.p.ended)}, within three months. Crestline's schedule recoups all three months. Taken from ${esc(r.agent.name)}'s payout, not Harborline's override alone.</small></div></div>`).join("")}
+          ${S.disputed ? `<div class="card" data-guide="dispute"><div class="card-b" data-guide="disp-ok"><div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><span class="chip ok">Sent</span><span class="muted" style="font-size:13px">Ashford has the ${R.issues.filter(r => r.p.carrier === "ashford").length} policies and ${m2(R.owed)} owed. Bluewater has the agent-of-record correction. Both are tracked until they show up on October's statements.</span></div></div></div>`
+            : card("Disputes, drafted", `<div class="letter">${esc(dispute(R))}</div>`, { guide: "dispute", foot: `<button class="btn primary" id="dispute">${icon("send")}Send to Ashford and Bluewater</button>` })}
+          <div class="stack">${card("Checked and correct", `${R.chargebacks.map(r => `<div class="fix"><span class="chip info plain">Chargeback</span><div><b>${esc(r.p.first)} ${esc(r.p.last)} · ${m2(r.paid)}</b><small>Effective ${esc(r.p.eff)}, disenrolled ${esc(r.p.ended)}, within three months. Ashford's schedule recoups all three months. Taken from ${esc(r.agent.name)}'s payout, not Harborline's override alone.</small></div></div>`).join("")}
             <div class="fix"><span class="chip ok plain">OK</span><div><b>${R.rows.filter(r => r.status === "ok").length} policies paid exactly right</b><small>Rate, months and writing agent all match the book.</small></div></div>`, { guide: "correct" })}</div>
         </div>
       </div>`;
-    $("#dispute") && ($("#dispute").onclick = async e => { e.target.disabled = true; e.target.innerHTML = `<span class="g-spin"></span> Sending…`; await UI.sleep(1200); S.disputed = true; toast("Disputes sent to Crestline and Bluewater"); render(); });
+    $("#dispute") && ($("#dispute").onclick = async e => { e.target.disabled = true; e.target.innerHTML = `<span class="g-spin"></span> Sending…`; await UI.sleep(1200); S.disputed = true; toast("Disputes sent to Ashford and Bluewater"); render(); });
   }
 
   function payouts() {
@@ -286,7 +286,7 @@ ${DATA.firm}`;
       </div>
       ${card("Agent payouts · September", `<div class="tbl-wrap"><table class="t"><thead><tr><th>Agent</th><th class="num">Level</th><th class="num">Policies paid</th><th class="num">Received</th><th class="num">Agent share</th><th class="num">Harborline keeps</th><th>Notes</th></tr></thead><tbody>
         ${P.map(x => { const notes = [...(x.charge ? [`Chargeback ${m2(x.charge)} (${R.chargebacks.filter(r => r.agent.id === x.a.id).map(r => r.p.id).join(", ")})`] : []),
-            ...x.moved.map(r => `Credited ${m2(r.paid)} Bluewater paid under ${r.paidTo.name} (${r.p.id})`), ...(x.pendingAmt ? [`${m2(x.pendingAmt)} owed by Crestline · share paid when it arrives`] : [])];
+            ...x.moved.map(r => `Credited ${m2(r.paid)} Bluewater paid under ${r.paidTo.name} (${r.p.id})`), ...(x.pendingAmt ? [`${m2(x.pendingAmt)} owed by Ashford · share paid when it arrives`] : [])];
           return `<tr data-agent="${x.a.id}"><td><div class="cell-2"><b>${esc(x.a.name)}</b><small class="mono">NPN ${x.a.npn}</small></div></td><td class="num">${Math.round(x.a.level * 100)}%</td><td class="num">${x.lines}</td><td class="num">${m2(x.received)}</td><td class="num strong">${m2(x.share)}</td><td class="num">${m2(x.keep)}</td><td style="font-size:12.5px">${notes.map(esc).join("<br>") || '<span class="muted">—</span>'}</td></tr>`; }).join("")}
         </tbody><tfoot><tr><td>Total</td><td></td><td class="num">${tot("lines")}</td><td class="num">${m2(tot("received"))}</td><td class="num">${m2(tot("share"))}</td><td class="num">${m2(tot("keep"))}</td><td></td></tr></tfoot></table></div>`,
         { tight: true, guide: "payouts", sub: "credited to the writing agent in the book, whatever name the carrier used",
@@ -366,18 +366,18 @@ ${DATA.firm}`;
 
       { chapter: "Contracting board", route: "#/board", target: '[data-guide="board"]', block: "start",
         marks: ['tr[data-agent="price"]', 'tr[data-agent="ruiz"]'],
-        title: "What stops an agent selling this AEP", body: "Every agent in contracting, sorted by what's blocking them. A packet Crestline sent back over a 2026 AHIP certificate, and an E&O policy that has already expired." },
+        title: "What stops an agent selling this AEP", body: "Every agent in contracting, sorted by what's blocking them. A packet Ashford sent back over a 2026 AHIP certificate, and an E&O policy that has already expired." },
 
       { chapter: "New agent", route: BA + "/docs", target: "#aDrop", dropzone: "#aDrop", dropButton: "#aSample", doneWhen: '[data-guide="docs-read"]',
         files: DATA.packet.map((fn, i) => ({ name: ["Contracting intake", "License summary", "E&O certificate", "Training transcript"][i], url: FA(fn), note: ["Five carriers, three states", "TN, GA and FL", "Anchorpoint Professional", "AHIP, AML, annuity"][i] })),
         title: "Renee Castillo's packet", body: "An independent agent in Knoxville asking for five carriers in Tennessee, Georgia and Florida. <b>Drag the four documents onto the drop area.</b>" },
       { chapter: "New agent", route: BA + "/profile", target: '[data-guide="profile"]', block: "start",
-        source: { type: "pdf", url: FA(DATA.packet[0]), find: ["19283746", "Crestline Health", "Keystone Annuity", "Clients who winter in Florida"], caption: "Agent intake · Renee Castillo", legend: "<i></i> read into the profile" },
+        source: { type: "pdf", url: FA(DATA.packet[0]), find: ["19283746", "Ashford Health", "Sterling Annuity", "Clients who winter in Florida"], caption: "Agent intake · Renee Castillo", legend: "<i></i> read into the profile" },
         title: "One packet, read once", body: "NPN, agency, the five carriers and three states, the background answers and direct deposit. Typed once by the agent, never again by anyone at Harborline." },
       { chapter: "New agent", route: BA + "/carriers", target: '[data-guide="matrix"]', block: "start",
-        marks: ['[data-req="crestline-ahip"]', '[data-req="keystone-aml"]'],
+        marks: ['[data-req="ashford-ahip"]', '[data-req="sterling-aml"]'],
         source: { type: "pdf", url: FA(DATA.packet[3]), find: ["Plan year 2026", "03/14/2025"], caption: "Training transcript · Renee Castillo", legend: "<i></i> too old for two carriers" },
-        title: "Five carriers, checked before anything is sent", body: "Each carrier's rules against the packet, state by state. Crestline needs a 2027 AHIP; Renee's is for 2026. Keystone wants AML within 12 months; Renee's is 18 months old.",
+        title: "Five carriers, checked before anything is sent", body: "Each carrier's rules against the packet, state by state. Ashford needs a 2027 AHIP; Renee's is for 2026. Sterling wants AML within 12 months; Renee's is 18 months old.",
         why: "Submitted as is, three of these come back in two weeks, right as AEP opens." },
       { chapter: "New agent", route: BA + "/carriers", target: '[data-guide="matrix"]', block: "start",
         marks: ['[data-req="bluewater-eo"]', '[data-st="harvest-FL"]'],
@@ -389,24 +389,24 @@ ${DATA.firm}`;
         title: "Four appointments today, nothing sent back later", body: "Two carriers submitted for two states. Renee has the three fixes with a link for each, and Florida goes in when the state issues the license." },
 
       { chapter: "Commissions", route: BC + "/statements", target: "#cDrop", dropzone: "#cDrop", dropButton: "#cSample", doneWhen: '[data-guide="stmts-read"]',
-        files: [{ name: "Crestline Health", url: FC(DATA.statements[0]), note: "CSV export · 63 lines" }, { name: "Bluewater Senior", url: FC(DATA.statements[1]), note: "PDF statement · 23 lines" }],
-        title: "September's statements", body: "Two carriers, two formats: a CSV export from Crestline and a PDF from Bluewater. <b>Drag both onto the drop area.</b>" },
+        files: [{ name: "Ashford Health", url: FC(DATA.statements[0]), note: "CSV export · 63 lines" }, { name: "Bluewater Senior", url: FC(DATA.statements[1]), note: "PDF statement · 23 lines" }],
+        title: "September's statements", body: "Two carriers, two formats: a CSV export from Ashford and a PDF from Bluewater. <b>Drag both onto the drop area.</b>" },
       { chapter: "Commissions", route: BC + "/recon", target: '[data-guide="bycarrier"]', block: "start",
-        marks: ['tr[data-carrier="crestline"]'],
-        title: "Every policy against its schedule", body: "Harborline's book says what each carrier owes for every policy: $57.50 a month for a first-year Medicare Advantage enrollment, $28.75 at renewal, 20% or 10% of a supplement premium. Crestline paid $230 less than it owes." },
+        marks: ['tr[data-carrier="ashford"]'],
+        title: "Every policy against its schedule", body: "Harborline's book says what each carrier owes for every policy: $57.50 a month for a first-year Medicare Advantage enrollment, $28.75 at renewal, 20% or 10% of a supplement premium. Ashford paid $230 less than it owes." },
       { chapter: "Commissions", route: BC + "/recon", target: '[data-guide="exceptions"]', block: "start",
         marks: ['tr[data-pol="BW-2240280"]'],
-        source: { type: "csv", url: FC(DATA.statements[0]), caption: "Crestline Health - commission statement - 2026-09.csv", legend: "<i></i> first-year enrollments paid as renewals",
-          mark: (i, h, v, row) => ["CH752003230", "CH880770066"].includes(row[3]) && (h === "Comm Type" || h === "Comm Amount" || h === "Eff Date") ? "bad" : "" },
+        source: { type: "csv", url: FC(DATA.statements[0]), caption: "Ashford Health - commission statement - 2026-09.csv", legend: "<i></i> first-year enrollments paid as renewals",
+          mark: (i, h, v, row) => ["AH752003230", "AH880770066"].includes(row[3]) && (h === "Comm Type" || h === "Comm Amount" || h === "Eff Date") ? "bad" : "" },
         title: "Where the money went missing", body: "Three September enrollments weren't paid at all. Two first-year enrollments were paid at the renewal rate. And Bluewater paid Alicia Duran's policy under Terrence Hollis's NPN, so Alicia would have gone unpaid for it." },
-      { chapter: "Commissions", route: BC + "/recon", target: "#dispute", advance: "click", hint: "Click Send to Crestline and Bluewater",
+      { chapter: "Commissions", route: BC + "/recon", target: "#dispute", advance: "click", hint: "Click Send to Ashford and Bluewater",
         title: "Disputes, already written", body: "Policy by policy, with the amounts and the right agent of record. <b>Send them.</b>" },
       { chapter: "Commissions", route: BC + "/recon", target: '[data-guide="disp-ok"]', block: "center", wait: 8000,
         title: "Tracked until it's paid", body: "Both carriers have it in writing, and each item stays open until it shows up on October's statements." },
 
       { chapter: "Payouts", route: BC + "/payouts", target: '[data-guide="payouts"]', block: "start",
         marks: ['tr[data-agent="hollis"]', 'tr[data-agent="duran"]'],
-        title: "Each agent paid for what they wrote", body: "Each agent's share at their contract level. The early-disenrollment chargeback comes out of Terrence's payout. Alicia gets the Bluewater policy paid under Terrence's name. What Crestline still owes is paid out when it arrives." },
+        title: "Each agent paid for what they wrote", body: "Each agent's share at their contract level. The early-disenrollment chargeback comes out of Terrence's payout. Alicia gets the Bluewater policy paid under Terrence's name. What Ashford still owes is paid out when it arrives." },
 
       { chapter: "Results", route: "#/board", target: '[data-guide="board"]', block: "start",
         marks: ['tr[data-agent="castillo"]'],

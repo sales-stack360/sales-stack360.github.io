@@ -15,9 +15,9 @@ const Contract = (() => {
       if (c.ahip) { const y = T.ahip && T.ahip.year; reqs.push({ id: "ahip", label: `AHIP, plan year ${c.ahip}`, ok: !!y && y >= c.ahip,
         detail: !y ? "No AHIP certificate in the packet" : y >= c.ahip ? `Plan year ${y}` : `Certificate is for plan year ${y}` }); }
       if (c.eo) { const ok = E.limit >= c.eo && eoLeft >= DATA.eoMinDays;
-        reqs.push({ id: "eo", label: `E&O ${UI.money(c.eo)}`, ok, detail: E.limit < c.eo ? `Limit ${UI.money(E.limit)}` : ok ? `Through ${us(E.to)}` : `Expires ${us(E.to)}, in ${eoLeft} days` }); }
+        reqs.push({ id: "eo", label: `E&O ${UI.money(c.eo)}`, ok, detail: E.limit < c.eo ? `Limit ${UI.money(E.limit)}` : ok ? `Through ${us(E.to)}` : `Expires ${us(E.to)}, in ${eoLeft} days, under the ${DATA.eoMinDays} day minimum` }); }
       if (c.aml) { const age = T.aml ? months(T.aml.done, today) : null;
-        reqs.push({ id: "aml", label: `AML within ${c.aml} months`, ok: age != null && age <= c.aml, detail: age == null ? "No AML course in the packet" : `Taken ${us(T.aml.done)}, ${age} months ago` }); }
+        reqs.push({ id: "aml", label: `AML within ${c.aml} months`, ok: age != null && age <= c.aml, detail: age == null ? "No AML course in the packet" : `Taken ${us(T.aml.done)}, ${age} months ago${age > c.aml ? `, over the ${c.aml} month limit` : ""}` }); }
       if (c.annuity) reqs.push({ id: "annuity", label: "Annuity best-interest training", ok: !!T.annuity, detail: T.annuity ? `Taken ${us(T.annuity.done)}` : "Not in the packet" });
       const states = I.states.map(({ st }) => {
         const lic = L.rows.find(r => r.st === st), line = new RegExp(c.line, "i");
@@ -60,7 +60,7 @@ const Comm = (() => {
       else if (l.npn !== agent.npn) { r.status = "agent"; r.paidTo = agentOf(l.npn); }
       else if (Math.abs(r.diff) < 0.01) r.status = p.expected < 0 ? "chargeback" : "ok";
       else r.status = r.diff < 0 ? "short" : "over";
-      if (r.status === "short" && p.carrier === "crestline" && l.type === "renewal" && p.kind === "initial") r.why = "Paid at the renewal rate in the first year";
+      if (r.status === "short" && p.carrier === "ashford" && l.type === "renewal" && p.kind === "initial") r.why = "Paid at the renewal rate in the first year";
       return r;
     });
     const known = new Set(rows.map(r => r.p.id));

@@ -336,7 +336,7 @@ ${DATA.firm}`;
         title: "The illustration he's holding won't happen", body: "It shows Standard Plus. Summit's own guideline won't give a diabetic on medication better than Standard, so the real offer is $1,080 a year higher, $21,600 over the term. He'd find out after the exam.",
         why: "A rate-down after the exam is where most impaired-risk cases are lost." },
       { chapter: "Carriers", route: BASE + "/quotes", target: '[data-rec="crestpoint"]', advance: "click", hint: "Click Recommend on Crestpoint Mutual",
-        title: "Recommend Crestpoint Mutual", body: "Standard Plus at $5,070, which is $870 a year under what Summit will really charge. <b>Recommend it</b> and the application and letter are built for it." },
+        title: "Recommend Crestpoint Mutual", body: "Standard Plus at $5,070 a year, against $5,940 from Summit at the class Summit will really give. <b>Recommend it</b> and the application and letter are built for it." },
 
       { chapter: "Application", route: BASE + "/app", target: '[data-guide="app"]', block: "start",
         marks: ['[data-field="date-of-birth"] .val', '[data-field="face-amount"] .val', '[data-field="ever-declined-or-rated"] .val', '[data-field="driver-s-license"] .val'],

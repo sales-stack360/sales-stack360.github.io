@@ -719,7 +719,7 @@
       { chapter: "Self-funded bids", route: "#/marketing/cedar-ridge/compare", target: '[data-guide="sf-SL"]', block: "start",
         marks: ['tr[data-row="lasers"] td[data-col="Atlas Stop Loss"]', 'tr[data-row="specific-deductible"] td[data-col="Atlas Stop Loss"]', 'tr[data-row="risk-adjusted-cost"] td[data-col="Atlas Stop Loss"]', 'tr[data-row="risk-adjusted-cost"] td[data-col="Harborstone Specialty"]'],
         source: { type: "pdf", url: "samples/cedar-ridge/Atlas%20Stop%20Loss%20proposal.pdf", find: ["2 at $750,000 and $500,000", "$300,000", "$71.90"], caption: "Atlas Stop Loss proposal.pdf", legend: "<i></i> lasers and deductible" },
-        title: "Lasers and deductibles, priced in", body: "Atlas has the lowest rates, but two lasers and a $300,000 deductible add about $950,000 of retained risk. Risk-adjusted, Harborstone wins." },
+        title: "Lasers and deductibles, priced in", body: "Atlas has the lowest rates, but its two lasers keep $650,000 of risk with the group, and the $300,000 deductible about $300,000 more. Risk-adjusted, Harborstone wins." },
       { chapter: "Self-funded bids", route: "#/marketing/cedar-ridge/savings", target: ".report", block: "start",
         title: "Savings, documented", body: "Current vendors against the selected bids, line by line, with how every figure was calculated and the risks that were checked. Ready to put in front of a CFO." },
 

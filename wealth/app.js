@@ -168,7 +168,7 @@
       ${card(`${brcx.symbol} lot by lot · joint account`, `<div class="tbl-wrap"><table class="t"><thead><tr><th>Bought</th><th class="num">Shares</th><th class="num">Cost per share</th><th class="num">Cost basis</th><th class="num">Value</th><th class="num">Gain or loss</th><th></th></tr></thead><tbody>
         ${B.lots.map(l => `<tr data-lot="${l.acquired.replace(/\//g, "-")}" class="${l.covered ? "" : "bad"}"><td>${esc(l.acquired)}</td><td class="num">${l.qty.toLocaleString()}</td><td class="num">${l.covered ? m2(l.cps) : "—"}</td><td class="num">${l.covered ? m2(l.basis) : "—"}</td><td class="num">${m2(l.value)}</td><td class="num">${l.covered ? gl(l.gl) : "—"}</td>
           <td>${l.covered ? (l.gl < 0 ? '<span class="chip info plain">Loss to harvest</span>' : "") : '<span class="chip crit plain">No basis on file</span>'}</td></tr>`).join("")}
-        </tbody></table></div>`, { tight: true, guide: "lots", sub: `${brcx.missing.toLocaleString()} of ${brcx.qty.toLocaleString()} shares bought before 2011 have no basis reported`,
+        </tbody></table></div>`, { tight: true, guide: "lots", sub: `${brcx.missing.toLocaleString()} of ${brcx.qty.toLocaleString()} shares, ${money(c.noncovered.reduce((s, l) => s + l.value, 0))}, were bought before 2011 and have no basis reported`,
           foot: `<span class="muted" style="font-size:12.5px">Ask Robert for the purchase records, or Blue Ridge's stock plan statements from 2009 and 2010. Until then those lots stay out of any sale.</span>` })}
     </div>`;
   }

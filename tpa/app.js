@@ -89,7 +89,7 @@
     const c = calc();
     const tabs = [["docs", "Files"], ["elig", "Eligibility"], ["claims", "Claims check"], ["stoploss", "Stop-loss"], ["report", "Monthly report"]];
     const noticeOpen = c && c.SL.open.length;
-    setPage([["Employer groups", "#/board"], ["Ridgeway Manufacturing"]], `${head("Ridgeway Manufacturing", `Self-funded · ${esc(G.plan)} · Kokomo, IN · HR: ${esc(G.hr)}`,
+    setPage([["Employer groups", "#/board"], ["Ridgeway Manufacturing"]], `${head("Ridgeway Manufacturing", `Self-funded · ${esc(G.plan)} · 144 employees · Kokomo, IN · HR: ${esc(G.hr)}`,
       c ? `<span class="chip ${noticeOpen ? "warn" : "ok"}">${noticeOpen ? "Stop-loss notice due Sep 30" : "September loaded"}</span>` : `<span class="chip plain">September file received Sep 15</span>`)}
       <div class="tabs">${tabs.map(([k, l]) => `<a href="${BASE}/${k}" class="${tab === k ? "on" : ""}">${l}${k === "docs" && S.docs.length ? `<span class="cnt">${S.docs.length}</span>` : ""}${k === "stoploss" && noticeOpen ? `<span class="cnt hot">${noticeOpen}</span>` : ""}</a>`).join("")}</div>
       ${!c ? next("Start", "<b>Load what came in.</b> Ridgeway's September eligibility file, August's paid claims register and the stop-loss contract.") : ({
