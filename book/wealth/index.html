@@ -38,7 +38,7 @@
 (function () {
   var q = new URLSearchParams(location.search), clean = function (v, n) { return (v || "").replace(/[^\w-]/g, "").slice(0, n); };
   var utm = { utmSource: "demo-site", utmCampaign: "wealth", utmMedium: clean(q.get("from"), 30) || "direct" };
-  if (clean(q.get("r"), 40)) utm.utmContent = clean(q.get("r"), 40);
+  var r = clean(q.get("r"), 40) || clean(window.LEAD_CODE, 40); if (r) utm.utmContent = r;
   var url = "https://calendly.com/stack360-sales/virtual-meetup?hide_gdpr_banner=1&primary_color=e07830";
   if (window.Calendly) Calendly.initInlineWidget({ url: url, parentElement: document.getElementById("cal"), utm: utm });
   else document.getElementById("cal").innerHTML = '<p style="padding:24px">The scheduler could not load here. <a href="https://calendly.com/stack360-sales/virtual-meetup">Open it on Calendly</a>.</p>';

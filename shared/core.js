@@ -286,10 +286,13 @@
   document.addEventListener("click", e => { if (e.target.closest(".topbar .search")) openPalette(); });
 
   /* ---------- booking a call: through a short page on the demo domain, so each click can be counted there ---------- */
-  const DEMO = ((location.pathname.match(/\/([a-z-]+)\/(?:index\.html)?$/) || [])[1] || "demo").replace(/^fortis$/, "submission");
-  try { const r = new URLSearchParams(location.search).get("r"); if (r) sessionStorage.setItem("demo:ref", r.replace(/[^\w-]/g, "").slice(0, 40)); } catch (e) { }
+  // a personal link (/<desk>/t/<code>/) sets DEMO_TRACK, so Cloudflare sees each person's visits and booking clicks as their own pages
+  const TRACK = window.DEMO_TRACK || null;
+  const DEMO = TRACK ? TRACK.desk : ((location.pathname.match(/\/([a-z-]+)\/(?:index\.html)?$/) || [])[1] || "demo").replace(/^fortis$/, "submission");
+  try { const r = TRACK ? TRACK.code : new URLSearchParams(location.search).get("r"); if (r) sessionStorage.setItem("demo:ref", r.replace(/[^\w-]/g, "").slice(0, 40)); } catch (e) { }
   const ref = () => { try { return sessionStorage.getItem("demo:ref") || ""; } catch (e) { return ""; } };
-  const bookUrl = (from = "topbar") => `../book/${DEMO}/?from=${encodeURIComponent(from)}${ref() ? "&r=" + encodeURIComponent(ref()) : ""}`;
+  const bookUrl = (from = "topbar") => TRACK ? `../book/${DEMO}/t/${TRACK.code}/?from=${encodeURIComponent(from)}`
+    : `../book/${DEMO}/?from=${encodeURIComponent(from)}${ref() ? "&r=" + encodeURIComponent(ref()) : ""}`;
   const bookBar = document.querySelector(".topbar");
   if (bookBar) {
     const a = document.createElement("a"); a.className = "btn primary sm book-btn"; a.target = "_blank"; a.rel = "noopener"; a.href = bookUrl("topbar");
