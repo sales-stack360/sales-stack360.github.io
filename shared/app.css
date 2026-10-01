@@ -350,8 +350,13 @@ input[type=range]{accent-color:var(--accent);width:100%}
   .g-main,.g-main-l{grid-template-columns:1fr}
 }
 .menu-btn,.nav-shade{display:none}
+.login{display:none!important}   /* demos open straight on the dashboard as the sample user */
+.book-btn{white-space:nowrap;margin-left:4px}.book-btn .bk-s{display:none}
 @media (max-width:820px){
   .menu-btn{display:grid}
+  .book-btn .bk-l{display:none}.book-btn .bk-s{display:inline}
+  .topbar .crumbs,.topbar .top-ic:not(.menu-btn){display:none}   /* phones: room for the tour and the call button */
+  .topbar .g-launch{margin-right:auto}
   body.nav-open .side{display:flex;position:fixed;left:0;top:0;bottom:0;width:260px;height:auto;z-index:260;box-shadow:0 0 40px rgba(0,0,0,.35)}
   body.nav-open .nav-shade{display:block;position:fixed;inset:0;background:rgba(15,23,41,.45);z-index:255}
   .shell{grid-template-columns:1fr}
@@ -413,6 +418,7 @@ input[type=range]{accent-color:var(--accent);width:100%}
 .hint-bar b{font-weight:650}
 .hint-bar .num{background:var(--accent);color:#fff;border-radius:50%;width:20px;height:20px;display:grid;place-items:center;font-size:11px;font-weight:700;flex:none}
 @media (max-width:699px){.g-pop{max-height:46vh;overflow:auto;padding-bottom:4px}.g-src-b{max-height:150px}.g-files{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.g-cta{margin-top:14px;padding:12px 14px;border-radius:10px;background:var(--accent-w);color:var(--accent-ink);display:grid;gap:3px;font-size:13.5px}
 @media print{.g-launch,.g-ring,.g-pop,.tip-pop{display:none!important}}
 .next{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:var(--r);
   padding:10px 14px;margin-bottom:16px;box-shadow:var(--sh)}

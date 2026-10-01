@@ -757,7 +757,7 @@
   /* ================= sign in ================= */
   function enter(who) {
     S.who = who; document.body.dataset.authed = "1"; $("#login").classList.add("hide"); $("#shell").classList.remove("hide");
-    $("#me").innerHTML = `<div class="avatar s">${UI.initials(who.name)}</div><div>${who.name}<small>${who.role}</small></div><button id="out" data-tip="Sign out and clear this demo session">Sign out</button>`;
+    $("#me").innerHTML = `<div class="avatar s">${UI.initials(who.name)}</div><div>${who.name}<small>${who.role}</small></div><button id="out" data-tip="Clear this demo session and start again">Restart</button>`;
     $("#out").onclick = async () => { frozen = true; clearTimeout(saveT); await UI.api("POST", "/api/reset/benefits"); try { sessionStorage.clear(); } catch (e) { } location.hash = ""; location.reload(); };
   }
   let who = DATA.users[0];
@@ -771,6 +771,8 @@
   if (saved && saved.who) {
     enter(saved.who); view().innerHTML = `<div class="empty" style="padding:80px">${icon("refresh")}<p><b>Restoring your session…</b></p></div>`;
     restore(saved).catch(() => toast("Some sample files could not be reloaded", "warn")).finally(() => { render(); Guide.afterLogin({ restored: true }); });
+  } else {                     // no sign-in page: open straight on the dashboard as the first sample user
+    enter(DATA.users[0]); if (!location.hash || location.hash === "#") location.hash = "#/home"; render(); Guide.afterLogin();
   }
   })();
 })();

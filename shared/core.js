@@ -285,6 +285,19 @@
   });
   document.addEventListener("click", e => { if (e.target.closest(".topbar .search")) openPalette(); });
 
+  /* ---------- booking a call: through a short page on the demo domain, so each click can be counted there ---------- */
+  const DEMO = ((location.pathname.match(/\/([a-z-]+)\/(?:index\.html)?$/) || [])[1] || "demo").replace(/^fortis$/, "submission");
+  try { const r = new URLSearchParams(location.search).get("r"); if (r) sessionStorage.setItem("demo:ref", r.replace(/[^\w-]/g, "").slice(0, 40)); } catch (e) { }
+  const ref = () => { try { return sessionStorage.getItem("demo:ref") || ""; } catch (e) { return ""; } };
+  const bookUrl = (from = "topbar") => `../book/${DEMO}/?from=${encodeURIComponent(from)}${ref() ? "&r=" + encodeURIComponent(ref()) : ""}`;
+  const bookBar = document.querySelector(".topbar");
+  if (bookBar) {
+    const a = document.createElement("a"); a.className = "btn primary sm book-btn"; a.target = "_blank"; a.rel = "noopener"; a.href = bookUrl("topbar");
+    a.innerHTML = `${icon("calendar")}<span class="bk-l">Book a 20 minute call</span><span class="bk-s">Book a call</span>`;
+    a.addEventListener("click", () => { a.href = bookUrl("topbar"); });
+    bookBar.appendChild(a);
+  }
+
   /* ---------- phones: the sidebar opens from a menu button in the top bar ---------- */
   const topbar = document.querySelector(".topbar");
   if (topbar) {
@@ -297,6 +310,6 @@
     window.addEventListener("hashchange", close);
   }
 
-  window.UI = { $, $$, esc, sleep, money, num, pct, fdate, TODAY, daysUntil, initials, parseMoney, icon, toast, modal,
+  window.UI = { bookUrl, $, $$, esc, sleep, money, num, pct, fdate, TODAY, daysUntil, initials, parseMoney, icon, toast, modal,
     route, go, render, setOnNav: f => (onNav = f), api, setBackend, printOnly, setPalette: f => (paletteItems = f), openPalette, pdfPreview, pdfThumb, csvPreview, textPreview, tagTable, slug, parseCSV, toCSV, download, fetchSample, ext, kb, pdfLines, runSteps, dropzone };
 })();

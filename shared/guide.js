@@ -246,7 +246,9 @@
   function end() { teardown(); idx = -1; saveIdx(-1); updateLauncher(); }
   function finish() {
     end(); try { sessionStorage.setItem(key() + ":done", "1"); } catch (e) { }
-    UI.modal({ title: cfg.doneTitle || "That's the tour", body: cfg.doneBody || "", actions: [{ label: "Explore on my own", primary: true }] });
+    UI.modal({ title: cfg.doneTitle || "That's the tour",
+      body: (cfg.doneBody || "") + `<div class="g-cta"><b>Want to see this on your own files?</b><span>Book 20 minutes and we'll walk through how it would fit the way your team works.</span></div>`,
+      actions: [{ label: "Explore on my own" }, { label: "Book a 20 minute call", primary: true, onClick: () => { window.open(UI.bookUrl("tour_end"), "_blank", "noopener"); } }] });
     updateLauncher();
   }
   document.addEventListener("keydown", e => {
