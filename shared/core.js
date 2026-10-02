@@ -290,6 +290,13 @@
   const TRACK = window.DEMO_TRACK || null;
   const DEMO = TRACK ? TRACK.desk : ((location.pathname.match(/\/([a-z-]+)\/(?:index\.html)?$/) || [])[1] || "demo").replace(/^fortis$/, "submission");
   try { const r = TRACK ? TRACK.code : new URLSearchParams(location.search).get("r"); if (r) sessionStorage.setItem("demo:ref", r.replace(/[^\w-]/g, "").slice(0, 40)); } catch (e) { }
+  // the personal page's <base href="../../"> makes "#/inbox" links resolve to the shared /<desk>/ page, which drops the code;
+  // keep in-app links on the personal page so every screen (and the booking click) stays counted as that person's
+  if (TRACK) document.addEventListener("click", e => {
+    const a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a || a.target || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    e.preventDefault(); location.hash = a.getAttribute("href");
+  });
   const ref = () => { try { return sessionStorage.getItem("demo:ref") || ""; } catch (e) { return ""; } };
   const bookUrl = (from = "topbar") => TRACK ? `../book/${DEMO}/t/${TRACK.code}/?from=${encodeURIComponent(from)}`
     : `../book/${DEMO}/?from=${encodeURIComponent(from)}${ref() ? "&r=" + encodeURIComponent(ref()) : ""}`;
