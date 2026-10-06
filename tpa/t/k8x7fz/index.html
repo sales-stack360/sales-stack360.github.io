@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<base href="../../"><meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TPA Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;650;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/app.css?v=202610021650">
+<style>:root{--accent:#566b1f;--accent-2:#45561a;--accent-w:#f1f4e4;--accent-ink:#3a4815;--side:#12150c;--side-2:#1d2215}
+  .mapt td.code{font-family:var(--mono);font-size:12.5px}
+  .mapt td.to b{color:var(--accent-ink)} .mapt tr.skip td{color:var(--ink-3)}
+  .codes{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+  .codes span{font-size:12px;background:var(--accent-w);color:var(--accent-ink);border-radius:6px;padding:3px 8px;font-family:var(--mono)}
+  .pctbar{position:relative;height:8px;border-radius:5px;background:#eceee6;min-width:90px;overflow:hidden}
+  .pctbar i{position:absolute;left:0;top:0;bottom:0;border-radius:5px;background:var(--accent)}
+  .pctbar i.crit{background:var(--crit)} .pctbar i.warn{background:var(--warn)}
+  .pctbar b{position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:#1b1f14;opacity:.55}
+  .letter{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px 24px;font:13.5px/1.65 Georgia,"Times New Roman",serif;color:#1b1b1b;white-space:pre-wrap}
+  .rpt{display:grid;gap:18px}
+  .rpt h4{margin:0 0 8px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-3)}
+  .agg{height:14px;border-radius:7px;background:#eceee6;position:relative;overflow:hidden;margin:8px 0 6px}
+  .agg i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:7px}
+  .agg-x{display:flex;justify-content:space-between;font-size:12px;color:var(--ink-3)}
+  .delta{font-size:12px;font-weight:650;margin-left:6px} .delta.up{color:var(--ok)} .delta.dn{color:var(--crit)}
+  .t tr.okrow td{color:var(--ink-3)}
+</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23566b1f'/><path d='M16 8v16M8 16h16' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>">
+</head>
+<body>
+<div class="login" id="login">
+  <div class="login-l">
+    <div class="mark"><div class="mark-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 9v6M9 12h6"/></svg></div><div style="font-size:17px">TPA Desk<small>Lakeshore Benefit Administrators · sample workspace</small></div></div>
+    <div>
+      <h1>Every employer's file, loaded the same way.</h1>
+      <p>Eligibility files in whatever layout each employer sends, the paid claims register and the stop-loss contract go in. A clean roster, every claim checked against coverage dates, notices filed on time and the employer's monthly report come out.</p>
+      <div class="login-feats">
+        <div class="login-feat"><i>1</i><span><b style="color:#fff">Reads any employer's layout</b> — columns and codes mapped to your standard, every change found against last month.</span></div>
+        <div class="login-feat"><i>2</i><span><b style="color:#fff">Checks claims against coverage</b> — anything paid after a termination or past age 26, found while it can still be refunded.</span></div>
+        <div class="login-feat"><i>3</i><span><b style="color:#fff">Watches stop-loss deadlines</b> — claimants measured against the specific deductible and trigger diagnoses, notices drafted.</span></div>
+      </div>
+    </div>
+    <div class="login-foot">Sample data. All people, employers, providers, carriers, claims and figures are fictional.</div>
+  </div>
+  <div class="login-r">
+    <form class="login-box" id="loginForm">
+      <h2>Sign in</h2><p>Lakeshore Benefit Administrators</p>
+      <div class="field"><label>Work email</label><input class="input" id="email" value="priya@lakeshoreba.example"></div>
+      <div class="field"><label>Password</label><input class="input" type="password" value="demo-password"></div>
+      <button class="btn primary" style="width:100%;justify-content:center;padding:10px" type="submit">Sign in</button>
+      <div class="users" id="users"></div>
+    </form>
+  </div>
+</div>
+<div class="shell hide" id="shell">
+  <aside class="side">
+    <div class="side-top"><div class="mark"><div class="mark-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 9v6M9 12h6"/></svg></div><div>TPA Desk</div></div></div>
+    <div class="ws"><span class="dot"></span>Lakeshore Benefit Administrators</div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-user" id="me"></div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumbs" id="crumbs"></div>
+      <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search employers, members, claims<kbd>⌘K</kbd></div>
+      <button class="top-ic" onclick="location.hash='#/board'" aria-label="Employer groups"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="pip"></span></button>
+    </header>
+    <main class="page" id="view"></main>
+  </div>
+</div>
+<script>window.DEMO_TRACK = { desk: "tpa", code: "k8x7fz" };</script>
+<script src="../shared/core.js?v=202610021650"></script>
+<script src="../shared/guide.js?v=202610021650"></script>
+<script src="data.js?v=202610021650"></script>
+<script src="history.js?v=202610021650"></script>
+<script src="parsers.js?v=202610021650"></script>
+<script src="recon.js?v=202610021650"></script>
+<script src="app.js?v=202610021650"></script>
+</body>
+</html>
