@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Opening the demo</title>
+<script>
+/* A personal demo link that arrives damaged (a mail client or scanner glued the next word, an underscore or
+   punctuation onto it) still opens the right demo: keep the desk and the six-letter code, drop the rest. */
+(function () {
+  var desks = "benefits|submission|medicare|life|title|tpa|fmo|wealth";
+  var p = location.pathname;
+  var m = p.match(new RegExp("^/(book/)?(" + desks + ")/t/([a-z2-9]{6})"));
+  var to = m && "/" + (m[1] || "") + m[2] + "/t/" + m[3] + "/";
+  if (to && to !== p) { location.replace(to + location.hash); return; }   // never send a page back to itself
+  var d = p.match(new RegExp("^/(book/)?(" + desks + ")(?=/|$)"));
+  if (d && "/" + (d[1] || "") + d[2] + "/" !== p) { location.replace("/" + (d[1] || "") + d[2] + "/" + location.hash); return; }
+})();
+</script>
+<style>
+  body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; color: #1f2933; background: #f7f8fa; }
+  main { max-width: 32rem; margin: 18vh auto 0; padding: 0 20px; }
+</style>
+</head>
+<body>
+<main>
+  <p>This page could not be found. Please check the link in your email.</p>
+</main>
+</body>
+</html>
