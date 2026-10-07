@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<base href="../../"><meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Life Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;650;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/app.css?v=202610021650">
+<style>:root{--accent:#86198f;--accent-2:#701a75;--accent-w:#f9edfa;--accent-ink:#6b1573;--side:#170b19;--side-2:#241428}
+  .a1c{display:flex;align-items:flex-end;gap:14px;height:150px;padding:10px 4px 0;border-bottom:1px solid var(--line)}
+  .a1c .col{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;justify-content:flex-end}
+  .a1c .bar{width:100%;max-width:56px;border-radius:6px 6px 0 0;background:var(--accent)}
+  .a1c .bar.hi{background:var(--crit)} .a1c .v{font-weight:650;font-size:13px;font-variant-numeric:tabular-nums}
+  .a1c-x{display:flex;gap:14px;padding:6px 4px 0}.a1c-x span{flex:1;text-align:center;font-size:11.5px;color:var(--ink-3)}
+  .letter{background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px 26px;font:13.5px/1.65 Georgia,"Times New Roman",serif;color:#1b1b1b;white-space:pre-wrap}
+  .cmp td.pick{background:var(--accent-w);color:var(--accent-ink);font-weight:650}
+  .cmp .flag{display:block;font-size:11.5px;white-space:normal;text-align:right;line-height:1.35;margin-top:2px}
+  .cmp .flag.crit{color:var(--crit)} .cmp .flag.warn{color:var(--warn)} .cmp .flag.info{color:var(--info)}
+  .yn{font-weight:650} .yn.y{color:var(--ok)} .yn.n{color:var(--crit)}
+  .chg{display:grid;grid-template-columns:1fr auto auto auto;gap:6px 14px;align-items:center;font-size:13.5px}
+  .chg .was{color:var(--ink-3);text-decoration:line-through} .chg .now{font-weight:650} .chg .arrow{color:var(--ink-3)}
+  .soa-box{display:inline-grid;place-items:center;width:13px;height:13px;border:1px solid #111;font:bold 10px/1 Arial;margin-right:5px;vertical-align:-2px}
+</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2386198f'/><path d='M16 8v16M8 16h16' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>">
+</head>
+<body>
+<div class="login" id="login">
+  <div class="login-l">
+    <div class="mark"><div class="mark-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg></div><div style="font-size:17px">Life Desk<small>Northfield Life Brokerage · sample workspace</small></div></div>
+    <div>
+      <h1>From illustration to issued, without typing a thing twice.</h1>
+      <p>The client's intake, the physician statement and the illustration they're holding go in. A rate class each carrier will actually give, the carrier's application, a letter to the underwriter and every case's status come out.</p>
+      <div class="login-feats">
+        <div class="login-feat"><i>1</i><span><b style="color:#fff">Reads the file once</b> — health history, labs, prior declines and the illustration they were shown.</span></div>
+        <div class="login-feat"><i>2</i><span><b style="color:#fff">Underwrites before the underwriter</b> — each carrier's own guideline applied to decide the class it will really give.</span></div>
+        <div class="login-feat"><i>3</i><span><b style="color:#fff">Carries it into the application</b> — and pulls every open case's status out of each carrier's portal into one view.</span></div>
+      </div>
+    </div>
+    <div class="login-foot">Sample data. All people, brokerages, physicians, carriers, rate classes and premiums are fictional. Drug names are real medications used for illustration.</div>
+  </div>
+  <div class="login-r">
+    <form class="login-box" id="loginForm">
+      <h2>Sign in</h2><p>Northfield Life Brokerage</p>
+      <div class="field"><label>Work email</label><input class="input" id="email" value="nora@northfieldlife.example"></div>
+      <div class="field"><label>Password</label><input class="input" type="password" value="demo-password"></div>
+      <button class="btn primary" style="width:100%;justify-content:center;padding:10px" type="submit">Sign in</button>
+      <div class="users" id="users"></div>
+    </form>
+  </div>
+</div>
+<div class="shell hide" id="shell">
+  <aside class="side">
+    <div class="side-top"><div class="mark"><div class="mark-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg></div><div>Life Desk</div></div></div>
+    <div class="ws"><span class="dot"></span>Northfield Life Brokerage</div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-user" id="me"></div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumbs" id="crumbs"></div>
+      <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search cases, carriers, clients<kbd>⌘K</kbd></div>
+      <button class="top-ic" onclick="location.hash='#/board'" aria-label="Case board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="pip"></span></button>
+    </header>
+    <main class="page" id="view"></main>
+  </div>
+</div>
+<script>window.DEMO_TRACK = { desk: "life", code: "uykmcf" };</script>
+<script src="../shared/core.js?v=202610021650"></script>
+<script src="../shared/guide.js?v=202610021650"></script>
+<script src="data.js?v=202610021650"></script>
+<script src="parsers.js?v=202610021650"></script>
+<script src="uw.js?v=202610021650"></script>
+<script src="app.js?v=202610021650"></script>
+</body>
+</html>

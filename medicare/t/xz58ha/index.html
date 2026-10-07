@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<base href="../../"><meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Medicare Desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;550;600;650;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/app.css?v=202610021650">
+<style>:root{--accent:#0f766e;--accent-2:#0c5f59;--accent-w:#e6f4f2;--accent-ink:#0b5650;--side:#0b1716;--side-2:#152523}
+  .stars{color:#b7791f;letter-spacing:1px;font-size:12px}
+  .cmp td.pick{background:var(--accent-w);color:var(--accent-ink);font-weight:650}
+  .cmp .flag{display:block;font-size:11.5px;white-space:normal;text-align:right;line-height:1.35;margin-top:2px}
+  .cmp .flag.crit{color:var(--crit)} .cmp .flag.warn{color:var(--warn)} .cmp .flag.info{color:var(--info)}
+  .yn{font-weight:650} .yn.y{color:var(--ok)} .yn.n{color:var(--crit)}
+  .chg{display:grid;grid-template-columns:1fr auto auto auto;gap:6px 14px;align-items:center;font-size:13.5px}
+  .chg .was{color:var(--ink-3);text-decoration:line-through} .chg .now{font-weight:650} .chg .arrow{color:var(--ink-3)}
+  .soa-box{display:inline-grid;place-items:center;width:13px;height:13px;border:1px solid #111;font:bold 10px/1 Arial;margin-right:5px;vertical-align:-2px}
+</style>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f766e'/><path d='M16 8v16M8 16h16' stroke='white' stroke-width='3' stroke-linecap='round'/></svg>">
+</head>
+<body>
+<div class="login" id="login">
+  <div class="login-l">
+    <div class="mark"><div class="mark-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg></div><div style="font-size:17px">Medicare Desk<small>Silver Oak Medicare Advisors · sample workspace</small></div></div>
+    <div>
+      <h1>AEP prep done in September, not at midnight in November.</h1>
+      <p>Intake forms, pharmacy printouts and every client's Annual Notice of Change go in. Plan comparisons with their own drugs and doctors, scope of appointment forms and filled enrollment applications come out.</p>
+      <div class="login-feats">
+        <div class="login-feat"><i>1</i><span><b style="color:#fff">Reads what the client already gave you</b> — medications, doctors, pharmacy and what their plan changes next year.</span></div>
+        <div class="login-feat"><i>2</i><span><b style="color:#fff">Builds the comparison</b> — her drugs priced on every plan in the county, her doctors checked against every network.</span></div>
+        <div class="login-feat"><i>3</i><span><b style="color:#fff">Fills the carrier's enrollment</b> — in that carrier's format, held until the enrollment window opens.</span></div>
+      </div>
+    </div>
+    <div class="login-foot">Sample data. All people, agencies, doctors, pharmacies, carriers, plans and figures are fictional. Drug names are real medications used for illustration.</div>
+  </div>
+  <div class="login-r">
+    <form class="login-box" id="loginForm">
+      <h2>Sign in</h2><p>Silver Oak Medicare Advisors</p>
+      <div class="field"><label>Work email</label><input class="input" id="email" value="renee@silveroak.example"></div>
+      <div class="field"><label>Password</label><input class="input" type="password" value="demo-password"></div>
+      <button class="btn primary" style="width:100%;justify-content:center;padding:10px" type="submit">Sign in</button>
+      <div class="users" id="users"></div>
+    </form>
+  </div>
+</div>
+<div class="shell hide" id="shell">
+  <aside class="side">
+    <div class="side-top"><div class="mark"><div class="mark-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8M8 12h8"/></svg></div><div>Medicare Desk</div></div></div>
+    <div class="ws"><span class="dot"></span>Silver Oak Medicare Advisors</div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-user" id="me"></div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <div class="crumbs" id="crumbs"></div>
+      <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search clients, plans, drugs<kbd>⌘K</kbd></div>
+      <button class="top-ic" onclick="location.hash='#/aep'" aria-label="AEP board"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg><span class="pip"></span></button>
+    </header>
+    <main class="page" id="view"></main>
+  </div>
+</div>
+<script>window.DEMO_TRACK = { desk: "medicare", code: "xz58ha" };</script>
+<script src="../shared/core.js?v=202610021650"></script>
+<script src="../shared/guide.js?v=202610021650"></script>
+<script src="data.js?v=202610021650"></script>
+<script src="parsers.js?v=202610021650"></script>
+<script src="compare.js?v=202610021650"></script>
+<script src="app.js?v=202610021650"></script>
+</body>
+</html>
